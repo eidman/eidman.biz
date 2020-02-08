@@ -1,0 +1,32 @@
+/* reset box sizing*/
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+img {
+  width: 100%;
+}
+
+@font-face {
+  font-family: Druk;
+  src: url(fonts/Druk.otf);
+}
+
+html {
+  min-height: 100vh;
+  /* cursor: url(svg/sloth-cursor-01.svg), auto; */
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  color: rgb(107, 112, 121);
+}

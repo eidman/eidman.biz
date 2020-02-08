@@ -45,8 +45,8 @@ body {
   grid-template-rows: 10vh 45vh 45vh;
   grid-template-areas:
     'nav nav'
-    'design photo'
-    'painting painting';
+    'box1 box2'
+    'box3 box4';
   justify-content: center;
 }
 
@@ -60,7 +60,7 @@ body {
   justify-content: center;
 } */
 
-.section {
+.box {
   display: flex;
   border-top: 1px solid rgb(107, 112, 121);
   /* align-items: center; */
@@ -68,7 +68,7 @@ body {
   align-items: center;
 }
 
-.section:hover {
+.box:hover {
   background-image: url('http://placekitten.com/800/300');
   background-color: #cccccc;
   height: 100%;
@@ -83,15 +83,20 @@ a {
   color: rgb(107, 112, 121);
 }
 
-.design {
-  grid-area: design;
+.box1 {
+  grid-area: box1;
   border-right: 1px solid rgb(107, 112, 121);
 }
 
-.photo {
-  grid-area: photo;
+.box2 {
+  grid-area: box2;
 }
 
-.painting {
-  grid-area: painting;
+.box3 {
+  grid-area: box3;
+  border-right: 1px solid rgb(107, 112, 121);
+}
+
+.box4 {
+  grid-area: box4;
 }
