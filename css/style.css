@@ -26,10 +26,17 @@ html {
   /* cursor: url(svg/sloth-cursor-01.svg), auto; */
 }
 
+body {
+  font-family: Helvetica, sans-serif;
+  color: rgb(107, 112, 121);
+}
+
 .nav-container {
   grid-column: 1 / -1;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin: 0px 20px;
 }
 
 .container {
@@ -45,18 +52,32 @@ html {
 }
 
 .section {
-  border: 1px solid grey;
+  display: flex;
+  border-top: 1px solid rgb(107, 112, 121);
   /* align-items: center; */
   justify-content: center;
-  text-align: center;
+  align-items: center;
+}
+
+.section:hover {
+  background-image: url('http://placekitten.com/800/300');
+  background-color: #cccccc;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
 }
 
 .design {
   grid-area: design;
+  border-right: 1px solid rgb(107, 112, 121);
 }
+
 .photo {
   grid-area: photo;
 }
+
 .painting {
   grid-area: painting;
 }
