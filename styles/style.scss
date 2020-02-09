@@ -1,0 +1,173 @@
+$grey: rgb(107, 112, 121);
+
+/* reset box sizing*/
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+img {
+  width: 100%;
+}
+
+@font-face {
+  font-family: Scto;
+  src: url(/fonts/SctoGroteskARegular.otf);
+}
+
+html {
+  min-height: 100vh;
+  /* cursor: url(svg/sloth-cursor-01.svg), auto; */
+}
+
+body {
+  font-family: Scto, sans-serif;
+  color: $grey;
+}
+
+.nav-container {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 20px;
+}
+
+.bonsai {
+  width: 19%;
+  margin-left: 80%;
+}
+
+.home-container {
+  display: grid;
+  grid-template-columns: repeat(2, 50vw);
+  grid-template-rows: 10vh 45vh 45vh;
+  grid-template-areas:
+    'nav nav'
+    'box1 box2'
+    'box3 .';
+  justify-content: center;
+}
+
+/* bonsai animation */
+.bonsai:hover {
+  -moz-animation: spinoffPulse 1s infinite linear;
+  -webkit-animation: spinoffPulse 1s infinite linear;
+}
+
+@-moz-keyframes spinPulse {
+  0% {
+    -moz-transform: rotate(160deg);
+    opacity: 0;
+    box-shadow: 0 0 1px #bdd73c;
+  }
+  50% {
+    -moz-transform: rotate(145deg);
+    opacity: 1;
+  }
+  100% {
+    -moz-transform: rotate(-320deg);
+    opacity: 0;
+  }
+}
+@-moz-keyframes spinoffPulse {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spinPulse {
+  0% {
+    -webkit-transform: rotate(160deg);
+    opacity: 0;
+    box-shadow: 0 0 1px #bdd73c;
+  }
+  50% {
+    -webkit-transform: rotate(145deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(-320deg);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes spinoffPulse {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes rotatecircle {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(-360deg);
+  }
+}
+@-webkit-keyframes rotatecircle {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+
+/* .home-container {
+  display: grid;
+  grid-template-columns: repeat(3, calc(100vw / 3));
+  grid-template-rows: 10vh 90vh;
+  grid-template-areas:
+    'nav nav nav'
+    'design photo painting';
+  justify-content: center;
+} */
+
+.box {
+  display: flex;
+  border-top: 1px solid $grey;
+  justify-content: center;
+  align-items: center;
+}
+
+.box:hover {
+  background-image: url('http://placekitten.com/800/300');
+  background-color: $grey;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+a {
+  color: $grey;
+  text-decoration: none;
+}
+
+.box1 {
+  grid-area: box1;
+  border-right: 1px solid $grey;
+}
+
+.box2 {
+  grid-area: box2;
+}
+
+.box3 {
+  grid-area: box3;
+  border-right: 1px solid $grey;
+}

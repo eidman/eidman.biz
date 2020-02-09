@@ -41,12 +41,12 @@ body {
 
 .home-container {
   display: grid;
-  grid-template-columns: repeat(2, 50vw);
+  grid-template-columns: repeat(3, calc(100vw / 3));
   grid-template-rows: 10vh 45vh 45vh;
   grid-template-areas:
-    'nav nav'
-    'box1 box2'
-    'box3 .';
+    'nav nav nav'
+    'box1 box2 .'
+    'box3 box4 .';
   justify-content: center;
 }
 
@@ -78,6 +78,10 @@ body {
   color: #fff;
 }
 
+.box1:hover {
+  background-image: url('/content/photo/mexico/mexico1.jpg');
+}
+
 a {
   text-decoration: none;
   color: rgb(107, 112, 121);
@@ -97,84 +101,6 @@ a {
   border-right: 1px solid rgb(107, 112, 121);
 }
 
-.clock-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-top: 1px solid rgb(107, 112, 121);
-}
-.clock {
-  border-top: 1px solid rgb(107, 112, 121);
-  display: flex;
-  align-items: center;
-  grid-area: clock;
-
-  border-radius: 100%;
-  background: cornsilk;
-  border: 1px solid grey;
-}
-
-.wrap {
-  overflow: hidden;
-  position: relative;
-  /* width: 350px;
-  height: 350px; */
-  width: 34vh;
-  height: 34vh;
-  border-radius: 100%;
-}
-
-.minute,
-.hour {
-  position: absolute;
-  height: 75px;
-  width: 2px;
-  margin: auto;
-  top: -34%;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background: grey;
-  transform-origin: bottom center;
-  transform: rotate(0deg);
-  z-index: 1;
-}
-
-.minute {
-  position: absolute;
-  height: 100px;
-  top: -45%;
-  left: 0;
-  transform: rotate(90deg);
-}
-
-.second {
-  position: absolute;
-  height: 90px;
-  width: 2px;
-  margin: auto;
-  top: -40%;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background: #ff4b3e;
-  transform-origin: bottom center;
-  transform: rotate(180deg);
-  z-index: 1;
-}
-
-.dot {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 12px;
-  height: 12px;
-  border-radius: 100px;
-  background: white;
-  border: 2px solid grey;
-  border-radius: 100px;
-  margin: auto;
-  z-index: 1;
+.box4 {
+  grid-area: box4;
 }
