@@ -46,7 +46,7 @@ body {
   grid-template-areas:
     'nav nav'
     'box1 box2'
-    'box3 clock';
+    'box3 .';
   justify-content: center;
 }
 
@@ -90,6 +90,7 @@ a {
 
 .box2 {
   grid-area: box2;
+  border-bottom: 1px solid rgb(107, 112, 121);
 }
 
 .box3 {
@@ -97,42 +98,37 @@ a {
   border-right: 1px solid rgb(107, 112, 121);
 }
 
-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background: #d9d7dd;
-}
-
 .clock {
+  position: absolute;
+  bottom: 5vh;
+  right: 15vw;
   border-top: 1px solid rgb(107, 112, 121);
   display: flex;
-  justify-content: center;
   align-items: center;
   grid-area: clock;
 
   border-radius: 100%;
-  background: #ffffff;
-  font-family: 'Montserrat';
-  border: 5px solid white;
+  background: cornsilk;
+  border: 1px solid grey;
 }
 
 .wrap {
   overflow: hidden;
   position: relative;
-  width: 350px;
-  height: 350px;
+  /* width: 350px;
+  height: 350px; */
+  width: 34vh;
+  height: 34vh;
   border-radius: 100%;
 }
 
 .minute,
 .hour {
   position: absolute;
-  height: 100px;
-  width: 6px;
+  height: 75px;
+  width: 2px;
   margin: auto;
-  top: -27%;
+  top: -34%;
   left: 0;
   bottom: 0;
   right: 0;
@@ -144,9 +140,8 @@ body {
 
 .minute {
   position: absolute;
-  height: 130px;
-  width: 4px;
-  top: -38%;
+  height: 100px;
+  top: -45%;
   left: 0;
   transform: rotate(90deg);
 }
@@ -156,11 +151,10 @@ body {
   height: 90px;
   width: 2px;
   margin: auto;
-  top: -26%;
+  top: -40%;
   left: 0;
   bottom: 0;
   right: 0;
-  border-radius: 4px;
   background: #ff4b3e;
   transform-origin: bottom center;
   transform: rotate(180deg);
@@ -177,7 +171,7 @@ body {
   height: 12px;
   border-radius: 100px;
   background: white;
-  border: 2px solid #1b1b1b;
+  border: 2px solid grey;
   border-radius: 100px;
   margin: auto;
   z-index: 1;
