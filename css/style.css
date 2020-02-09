@@ -90,7 +90,6 @@ a {
 
 .box2 {
   grid-area: box2;
-  border-bottom: 1px solid rgb(107, 112, 121);
 }
 
 .box3 {
@@ -98,10 +97,13 @@ a {
   border-right: 1px solid rgb(107, 112, 121);
 }
 
+.clock-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgb(107, 112, 121);
+}
 .clock {
-  position: absolute;
-  bottom: 5vh;
-  right: 15vw;
   border-top: 1px solid rgb(107, 112, 121);
   display: flex;
   align-items: center;
