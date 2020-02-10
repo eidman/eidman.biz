@@ -1,5 +1,18 @@
+@use 'design';
+@use 'photo';
+@use 'painting';
+@use 'about';
+
 $grey: rgb(107, 112, 121);
 $greyBorder: 1px solid rgb(107, 112, 121);
+
+@mixin backgroundImage {
+  background-color: $grey;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 @mixin flexCenter {
   display: flex;
@@ -7,12 +20,6 @@ $greyBorder: 1px solid rgb(107, 112, 121);
   align-items: center;
 }
 
-@import './design.scss';
-@import './photo.scss';
-@import './painting.scss';
-@import './about.scss';
-
-/* reset box sizing*/
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -152,18 +159,15 @@ a {
 .box {
   @include flexCenter();
   border-top: $greyBorder;
+  border-right: $greyBorder;
   &:hover {
     // font-size: 10vw;
-    background-color: $grey;
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     p {
       padding: 8px 12px;
       border: 2px solid #fff;
       background: #fff;
     }
+    @include backgroundImage();
   }
 }
 
@@ -180,6 +184,7 @@ a {
   &:hover {
     background-image: url('/assets/design/Shortstop/Shortstop_Tote.jpg');
   }
+  border-right: none;
 }
 
 .painting {
@@ -188,4 +193,46 @@ a {
   &:hover {
     background-image: url('/assets/painting/older/rubber-preview.jpg');
   }
+}
+
+// DESIGN PAGE
+
+.design-container {
+  display: grid;
+  grid-template-columns: repeat(4, calc(100vw / 4));
+  grid-template-rows: 10vh 45vh 45vh;
+  grid-template-areas:
+    'nav nav nav nav'
+    'shortstop sloth verde siff'
+    'island nb motif .';
+  justify-content: center;
+}
+
+.shortstop {
+  grid-area: shortstop;
+}
+
+.motif {
+  grid-area: motif;
+}
+
+.sloth {
+  grid-area: sloth;
+}
+
+.island {
+  grid-area: island;
+}
+
+.verde {
+  grid-area: verde;
+}
+
+.new-balance {
+  grid-area: nb;
+}
+
+.siff {
+  grid-area: siff;
+  border-right: none;
 }

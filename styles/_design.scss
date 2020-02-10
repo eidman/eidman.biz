@@ -1,0 +1,27 @@
+.design-container {
+  display: grid;
+  grid-template-columns: repeat(3, calc(100vw / 3));
+  grid-template-rows: 10vh 45vh 45vh;
+  grid-template-areas:
+    'nav nav nav'
+    'shortstop sloth .'
+    'motif island .';
+  justify-content: center;
+}
+
+.shortstop {
+  grid-area: shortstop;
+}
+
+.motif {
+  grid-area: motif;
+  border-right: $greyBorder;
+}
+
+.sloth {
+  grid-area: sloth;
+}
+
+.island {
+  grid-area: island;
+}

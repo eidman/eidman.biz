@@ -1,47 +1,7 @@
-.photo-container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (calc(100vw / 3))[3];
-      grid-template-columns: repeat(3, calc(100vw / 3));
-  -ms-grid-rows: 10vh 45vh 45vh;
-      grid-template-rows: 10vh 45vh 45vh;
-      grid-template-areas: 'nav nav nav' 'mexico steve .' 'still catskills .';
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.mexico {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: mexico;
-  border-right: 1px solid #6b7079;
-}
-
-.mexico:hover {
-  background-image: url("/assets/photo/mexico/mexico1.jpg");
-}
-
-.steve {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: steve;
-}
-
-.still-life {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: still;
-  border-right: 1px solid #6b7079;
-}
-
-.catskills {
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
-  grid-area: catskills;
-}
-
-/* reset box sizing*/
+@use 'design';
+@use 'photo';
+@use 'painting';
+@use 'about';
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -169,6 +129,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   border-top: 1px solid #6b7079;
+  border-right: 1px solid #6b7079;
 }
 
 .box:hover {
@@ -200,6 +161,7 @@ a {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: photo;
+  border-right: none;
 }
 
 .photo:hover {
@@ -215,5 +177,61 @@ a {
 
 .painting:hover {
   background-image: url("/assets/painting/older/rubber-preview.jpg");
+}
+
+.design-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (calc(100vw / 4))[4];
+      grid-template-columns: repeat(4, calc(100vw / 4));
+  -ms-grid-rows: 10vh 45vh 45vh;
+      grid-template-rows: 10vh 45vh 45vh;
+      grid-template-areas: 'nav nav nav nav' 'shortstop sloth verde siff' 'island nb motif .';
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.shortstop {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: shortstop;
+}
+
+.motif {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: motif;
+}
+
+.sloth {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: sloth;
+}
+
+.island {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: island;
+}
+
+.verde {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: verde;
+}
+
+.new-balance {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: nb;
+}
+
+.siff {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: siff;
+  border-right: none;
 }
 /*# sourceMappingURL=style.css.map */
