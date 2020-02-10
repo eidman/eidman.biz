@@ -1,0 +1,31 @@
+.photo-container {
+  display: grid;
+  grid-template-columns: repeat(3, calc(100vw / 3));
+  grid-template-rows: 10vh 45vh 45vh;
+  grid-template-areas:
+    'nav nav nav'
+    'mexico steve .'
+    'still catskills .';
+  justify-content: center;
+}
+
+.mexico {
+  grid-area: mexico;
+  border-right: 1px solid rgb(107, 112, 121);
+  &:hover {
+    background-image: url('/content/photo/mexico/mexico1.jpg');
+  }
+}
+
+.steve {
+  grid-area: steve;
+}
+
+.still-life {
+  grid-area: still;
+  border-right: 1px solid rgb(107, 112, 121);
+}
+
+.catskills {
+  grid-area: catskills;
+}

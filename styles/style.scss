@@ -1,5 +1,7 @@
 $grey: rgb(107, 112, 121);
 
+@import './photo.scss';
+
 /* reset box sizing*/
 html {
   -webkit-box-sizing: border-box;
@@ -25,7 +27,6 @@ img {
 
 html {
   min-height: 100vh;
-  /* cursor: url(svg/sloth-cursor-01.svg), auto; */
 }
 
 body {
@@ -41,11 +42,6 @@ body {
   margin: 0px 20px;
 }
 
-.bonsai {
-  width: 19%;
-  margin-left: 80%;
-}
-
 .home-container {
   display: grid;
   grid-template-columns: repeat(2, 50vw);
@@ -57,75 +53,7 @@ body {
   justify-content: center;
 }
 
-/* bonsai animation */
-.bonsai:hover {
-  -moz-animation: spinoffPulse 1s infinite linear;
-  -webkit-animation: spinoffPulse 1s infinite linear;
-}
-
-@-moz-keyframes spinPulse {
-  0% {
-    -moz-transform: rotate(160deg);
-    opacity: 0;
-    box-shadow: 0 0 1px #bdd73c;
-  }
-  50% {
-    -moz-transform: rotate(145deg);
-    opacity: 1;
-  }
-  100% {
-    -moz-transform: rotate(-320deg);
-    opacity: 0;
-  }
-}
-@-moz-keyframes spinoffPulse {
-  0% {
-    -moz-transform: rotate(0deg);
-  }
-  100% {
-    -moz-transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes spinPulse {
-  0% {
-    -webkit-transform: rotate(160deg);
-    opacity: 0;
-    box-shadow: 0 0 1px #bdd73c;
-  }
-  50% {
-    -webkit-transform: rotate(145deg);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: rotate(-320deg);
-    opacity: 0;
-  }
-}
-@-webkit-keyframes spinoffPulse {
-  0% {
-    -webkit-transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-  }
-}
-@-moz-keyframes rotatecircle {
-  0% {
-    -moz-transform: rotate(0deg);
-  }
-  100% {
-    -moz-transform: rotate(-360deg);
-  }
-}
-@-webkit-keyframes rotatecircle {
-  0% {
-    -webkit-transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(-360deg);
-  }
-}
-
+// alt 3 column grid layout
 /* .home-container {
   display: grid;
   grid-template-columns: repeat(3, calc(100vw / 3));
@@ -136,21 +64,92 @@ body {
   justify-content: center;
 } */
 
+.bonsai {
+  width: 19%;
+  margin-left: 80%;
+  &:hover {
+    -moz-animation: spinoffPulse 1s infinite linear;
+    -webkit-animation: spinoffPulse 1s infinite linear;
+  }
+
+  @-moz-keyframes spinPulse {
+    0% {
+      -moz-transform: rotate(160deg);
+      opacity: 0;
+      box-shadow: 0 0 1px #bdd73c;
+    }
+    50% {
+      -moz-transform: rotate(145deg);
+      opacity: 1;
+    }
+    100% {
+      -moz-transform: rotate(-320deg);
+      opacity: 0;
+    }
+  }
+  @-moz-keyframes spinoffPulse {
+    0% {
+      -moz-transform: rotate(0deg);
+    }
+    100% {
+      -moz-transform: rotate(360deg);
+    }
+  }
+  @-webkit-keyframes spinPulse {
+    0% {
+      -webkit-transform: rotate(160deg);
+      opacity: 0;
+      box-shadow: 0 0 1px #bdd73c;
+    }
+    50% {
+      -webkit-transform: rotate(145deg);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: rotate(-320deg);
+      opacity: 0;
+    }
+  }
+  @-webkit-keyframes spinoffPulse {
+    0% {
+      -webkit-transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  @-moz-keyframes rotatecircle {
+    0% {
+      -moz-transform: rotate(0deg);
+    }
+    100% {
+      -moz-transform: rotate(-360deg);
+    }
+  }
+  @-webkit-keyframes rotatecircle {
+    0% {
+      -webkit-transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(-360deg);
+    }
+  }
+}
+
 .box {
   display: flex;
   border-top: 1px solid $grey;
   justify-content: center;
   align-items: center;
-}
-
-.box:hover {
-  background-image: url('http://placekitten.com/800/300');
-  background-color: $grey;
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: #fff;
+  &:hover {
+    background-image: url('http://placekitten.com/800/300');
+    background-color: $grey;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+  }
 }
 
 a {
