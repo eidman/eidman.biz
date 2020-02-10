@@ -33,6 +33,11 @@ html {
   align-items: center;
   border-top: 1px solid rgb(107, 112, 121);
 }
+
+.clock-container:hover {
+  background: rgb(107, 112, 121);
+}
+
 .clock {
   border-top: 1px solid rgb(107, 112, 121);
   display: flex;

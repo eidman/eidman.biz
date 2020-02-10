@@ -19,7 +19,7 @@
 }
 
 .mexico:hover {
-  background-image: url("/content/photo/mexico/mexico1.jpg");
+  background-image: url("/assets/photo/mexico/mexico1.jpg");
 }
 
 .steve {
@@ -67,9 +67,14 @@ html {
   min-height: 100vh;
 }
 
-body {
+body,
+a {
   font-family: Scto, sans-serif;
   color: #6b7079;
+}
+
+a {
+  text-decoration: none;
 }
 
 .nav-container {
@@ -77,12 +82,15 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 0px 20px;
 }
 
@@ -93,10 +101,7 @@ body {
       grid-template-columns: repeat(2, 50vw);
   -ms-grid-rows: 10vh 45vh 45vh;
       grid-template-rows: 10vh 45vh 45vh;
-      grid-template-areas: 'nav nav' 'box1 box2' 'box3 .';
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+      grid-template-areas: 'nav nav' 'design photo' 'painting .';
 }
 
 /* .home-container {
@@ -157,47 +162,58 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-top: 1px solid #6b7079;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-top: 1px solid #6b7079;
 }
 
 .box:hover {
-  background-image: url("http://placekitten.com/800/300");
   background-color: #6b7079;
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: #fff;
 }
 
-a {
-  color: #6b7079;
-  text-decoration: none;
+.box:hover p {
+  padding: 8px 12px;
+  border: 2px solid #fff;
+  background: #fff;
 }
 
-.box1 {
+.design {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
-  grid-area: box1;
+  grid-area: design;
   border-right: 1px solid #6b7079;
 }
 
-.box2 {
+.design:hover {
+  background-image: url("/assets/design/Shortstop/Shortstop_Tote.jpg");
+}
+
+.photo {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
-  grid-area: box2;
+  grid-area: photo;
 }
 
-.box3 {
+.photo:hover {
+  background-image: url("/assets/design/Shortstop/Shortstop_Tote.jpg");
+}
+
+.painting {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
-  grid-area: box3;
+  grid-area: painting;
   border-right: 1px solid #6b7079;
+}
+
+.painting:hover {
+  background-image: url("/assets/painting/older/rubber-preview.jpg");
 }
 /*# sourceMappingURL=style.css.map */

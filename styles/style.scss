@@ -1,6 +1,16 @@
 $grey: rgb(107, 112, 121);
+$greyBorder: 1px solid rgb(107, 112, 121);
 
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@import './design.scss';
 @import './photo.scss';
+@import './painting.scss';
+@import './about.scss';
 
 /* reset box sizing*/
 html {
@@ -29,16 +39,20 @@ html {
   min-height: 100vh;
 }
 
-body {
+body,
+a {
   font-family: Scto, sans-serif;
   color: $grey;
 }
 
+a {
+  text-decoration: none;
+}
+
 .nav-container {
   grid-column: 1 / -1;
-  display: flex;
+  @include flexCenter();
   justify-content: space-between;
-  align-items: center;
   margin: 0px 20px;
 }
 
@@ -48,9 +62,8 @@ body {
   grid-template-rows: 10vh 45vh 45vh;
   grid-template-areas:
     'nav nav'
-    'box1 box2'
-    'box3 .';
-  justify-content: center;
+    'design photo'
+    'painting .';
 }
 
 // alt 3 column grid layout
@@ -137,36 +150,42 @@ body {
 }
 
 .box {
-  display: flex;
-  border-top: 1px solid $grey;
-  justify-content: center;
-  align-items: center;
+  @include flexCenter();
+  border-top: $greyBorder;
   &:hover {
-    background-image: url('http://placekitten.com/800/300');
+    // font-size: 10vw;
     background-color: $grey;
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: #fff;
+    p {
+      padding: 8px 12px;
+      border: 2px solid #fff;
+      background: #fff;
+    }
   }
 }
 
-a {
-  color: $grey;
-  text-decoration: none;
+.design {
+  grid-area: design;
+  border-right: $greyBorder;
+  &:hover {
+    background-image: url('/assets/design/Shortstop/Shortstop_Tote.jpg');
+  }
 }
 
-.box1 {
-  grid-area: box1;
-  border-right: 1px solid $grey;
+.photo {
+  grid-area: photo;
+  &:hover {
+    background-image: url('/assets/design/Shortstop/Shortstop_Tote.jpg');
+  }
 }
 
-.box2 {
-  grid-area: box2;
-}
-
-.box3 {
-  grid-area: box3;
-  border-right: 1px solid $grey;
+.painting {
+  grid-area: painting;
+  border-right: $greyBorder;
+  &:hover {
+    background-image: url('/assets/painting/older/rubber-preview.jpg');
+  }
 }
