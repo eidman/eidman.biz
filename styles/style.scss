@@ -1,25 +1,7 @@
-@use 'design';
-@use 'photo';
-@use 'painting';
-@use 'about';
+@import 'variables', 'mixins', 'nav', 'clock', 'design', 'photo', 'painting',
+  'about';
 
-$grey: rgb(107, 112, 121);
-$greyBorder: 1px solid rgb(107, 112, 121);
-
-@mixin backgroundImage {
-  background-color: $grey;
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-@mixin flexCenter {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
+/*---- BASE ----*/
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -38,7 +20,7 @@ img {
 }
 
 @font-face {
-  font-family: Scto;
+  font-family: 'scto_regular';
   src: url(/fonts/SctoGroteskARegular.otf);
 }
 
@@ -48,19 +30,27 @@ html {
 
 body,
 a {
-  font-family: Scto, sans-serif;
+  font-family: $font-stack;
+  font-size: $font-size;
+  line-height: 1em;
   color: $grey;
+  text-rendering: optimizeLegibility;
 }
 
 a {
   text-decoration: none;
 }
 
+.logo:hover {
+  color: #ffca00;
+}
+
+/*---- GRID ----*/
+
 .nav-container {
-  grid-column: 1 / -1;
   @include flexCenter();
   justify-content: space-between;
-  margin: 0px 20px;
+  margin: 0px 30px;
 }
 
 .home-container {
@@ -73,93 +63,12 @@ a {
     'painting .';
 }
 
-// alt 3 column grid layout
-/* .home-container {
-  display: grid;
-  grid-template-columns: repeat(3, calc(100vw / 3));
-  grid-template-rows: 10vh 90vh;
-  grid-template-areas:
-    'nav nav nav'
-    'design photo painting';
-  justify-content: center;
-} */
-
-.bonsai {
-  width: 19%;
-  margin-left: 80%;
-  &:hover {
-    -moz-animation: spinoffPulse 1s infinite linear;
-    -webkit-animation: spinoffPulse 1s infinite linear;
-  }
-
-  @-moz-keyframes spinPulse {
-    0% {
-      -moz-transform: rotate(160deg);
-      opacity: 0;
-      box-shadow: 0 0 1px #bdd73c;
-    }
-    50% {
-      -moz-transform: rotate(145deg);
-      opacity: 1;
-    }
-    100% {
-      -moz-transform: rotate(-320deg);
-      opacity: 0;
-    }
-  }
-  @-moz-keyframes spinoffPulse {
-    0% {
-      -moz-transform: rotate(0deg);
-    }
-    100% {
-      -moz-transform: rotate(360deg);
-    }
-  }
-  @-webkit-keyframes spinPulse {
-    0% {
-      -webkit-transform: rotate(160deg);
-      opacity: 0;
-      box-shadow: 0 0 1px #bdd73c;
-    }
-    50% {
-      -webkit-transform: rotate(145deg);
-      opacity: 1;
-    }
-    100% {
-      -webkit-transform: rotate(-320deg);
-      opacity: 0;
-    }
-  }
-  @-webkit-keyframes spinoffPulse {
-    0% {
-      -webkit-transform: rotate(0deg);
-    }
-    100% {
-      -webkit-transform: rotate(360deg);
-    }
-  }
-  @-moz-keyframes rotatecircle {
-    0% {
-      -moz-transform: rotate(0deg);
-    }
-    100% {
-      -moz-transform: rotate(-360deg);
-    }
-  }
-  @-webkit-keyframes rotatecircle {
-    0% {
-      -webkit-transform: rotate(0deg);
-    }
-    100% {
-      -webkit-transform: rotate(-360deg);
-    }
-  }
-}
+/*---- SECTIONS ----*/
 
 .box {
   @include flexCenter();
-  border-top: $greyBorder;
-  border-right: $greyBorder;
+  border-top: $grey-border;
+  border-right: $grey-border;
   &:hover {
     // font-size: 10vw;
     p {
@@ -171,9 +80,13 @@ a {
   }
 }
 
+nav {
+  grid-area: nav;
+}
+
 .design {
   grid-area: design;
-  border-right: $greyBorder;
+  border-right: $grey-border;
   &:hover {
     background-image: url('/assets/design/Shortstop/Shortstop_Tote.jpg');
   }
@@ -182,57 +95,15 @@ a {
 .photo {
   grid-area: photo;
   &:hover {
-    background-image: url('/assets/design/Shortstop/Shortstop_Tote.jpg');
+    background-image: url('/assets/photo/sidewalk/sidewalk-1.jpg');
   }
   border-right: none;
 }
 
 .painting {
   grid-area: painting;
-  border-right: $greyBorder;
+  border-right: $grey-border;
   &:hover {
-    background-image: url('/assets/painting/older/rubber-preview.jpg');
+    background-image: url('/assets/painting/older/sphinx.jpg');
   }
-}
-
-// DESIGN PAGE
-
-.design-container {
-  display: grid;
-  grid-template-columns: repeat(4, calc(100vw / 4));
-  grid-template-rows: 10vh 45vh 45vh;
-  grid-template-areas:
-    'nav nav nav nav'
-    'shortstop sloth verde siff'
-    'island nb motif .';
-  justify-content: center;
-}
-
-.shortstop {
-  grid-area: shortstop;
-}
-
-.motif {
-  grid-area: motif;
-}
-
-.sloth {
-  grid-area: sloth;
-}
-
-.island {
-  grid-area: island;
-}
-
-.verde {
-  grid-area: verde;
-}
-
-.new-balance {
-  grid-area: nb;
-}
-
-.siff {
-  grid-area: siff;
-  border-right: none;
 }

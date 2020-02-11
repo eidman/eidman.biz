@@ -1,11 +1,11 @@
 .design-container {
   display: grid;
-  grid-template-columns: repeat(3, calc(100vw / 3));
+  grid-template-columns: repeat(4, calc(100vw / 4));
   grid-template-rows: 10vh 45vh 45vh;
   grid-template-areas:
-    'nav nav nav'
-    'shortstop sloth .'
-    'motif island .';
+    'nav nav nav nav'
+    'shortstop sloth verde siff'
+    'island nb motif .';
   justify-content: center;
 }
 
@@ -15,7 +15,6 @@
 
 .motif {
   grid-area: motif;
-  border-right: $greyBorder;
 }
 
 .sloth {
@@ -24,4 +23,17 @@
 
 .island {
   grid-area: island;
+}
+
+.verde {
+  grid-area: verde;
+}
+
+.new-balance {
+  grid-area: nb;
+}
+
+.siff {
+  grid-area: siff;
+  border-right: none;
 }

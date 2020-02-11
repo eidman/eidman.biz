@@ -1,78 +1,3 @@
-@use 'design';
-@use 'photo';
-@use 'painting';
-@use 'about';
-html {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-}
-
-img {
-  width: 100%;
-}
-
-@font-face {
-  font-family: Scto;
-  src: url(/fonts/SctoGroteskARegular.otf);
-}
-
-html {
-  min-height: 100vh;
-}
-
-body,
-a {
-  font-family: Scto, sans-serif;
-  color: #6b7079;
-}
-
-a {
-  text-decoration: none;
-}
-
-.nav-container {
-  grid-column: 1 / -1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 0px 20px;
-}
-
-.home-container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (50vw)[2];
-      grid-template-columns: repeat(2, 50vw);
-  -ms-grid-rows: 10vh 45vh 45vh;
-      grid-template-rows: 10vh 45vh 45vh;
-      grid-template-areas: 'nav nav' 'design photo' 'painting .';
-}
-
-/* .home-container {
-  display: grid;
-  grid-template-columns: repeat(3, calc(100vw / 3));
-  grid-template-rows: 10vh 90vh;
-  grid-template-areas:
-    'nav nav nav'
-    'design photo painting';
-  justify-content: center;
-} */
 .bonsai {
   width: 19%;
   margin-left: 80%;
@@ -118,7 +43,7 @@ a {
   }
 }
 
-.box {
+.clock-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -129,54 +54,96 @@ a {
       -ms-flex-align: center;
           align-items: center;
   border-top: 1px solid #6b7079;
-  border-right: 1px solid #6b7079;
 }
 
-.box:hover {
-  background-color: #6b7079;
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.box:hover p {
-  padding: 8px 12px;
-  border: 2px solid #fff;
+/* 
+.clock-container:hover {
+  background: rgb(107, 112, 121);
+} */
+.clock {
+  border-top: 1px solid #6b7079;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-area: clock;
+  border-radius: 100%;
   background: #fff;
+  border: 1px solid #6b7079;
 }
 
-.design {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: design;
-  border-right: 1px solid #6b7079;
+.wrap {
+  overflow: hidden;
+  position: relative;
+  width: 350px;
+  height: 350px;
+  width: 34vh;
+  height: 34vh;
+  border-radius: 100%;
 }
 
-.design:hover {
-  background-image: url("/assets/design/Shortstop/Shortstop_Tote.jpg");
+.minute,
+.hour {
+  position: absolute;
+  height: 60px;
+  width: 1px;
+  margin: auto;
+  top: -28%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #6b7079;
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  z-index: 1;
 }
 
-.photo {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: photo;
-  border-right: none;
+.minute {
+  position: absolute;
+  height: 90px;
+  top: -40%;
+  left: 0;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
-.photo:hover {
-  background-image: url("/assets/design/Shortstop/Shortstop_Tote.jpg");
+.second {
+  position: absolute;
+  height: 95px;
+  width: 1px;
+  margin: auto;
+  top: -42%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #ff4b3e;
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  z-index: 1;
+  -webkit-animation: rotate-second 60s linear infinite;
+  -moz-animation: rotate-second 60s linear infinite;
 }
 
-.painting {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: painting;
-  border-right: 1px solid #6b7079;
-}
-
-.painting:hover {
-  background-image: url("/assets/painting/older/rubber-preview.jpg");
+.dot {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 100px;
+  background: white;
+  border: 1px solid #6b7079;
+  border-radius: 100px;
+  margin: auto;
+  z-index: 1;
 }
 
 .design-container {
@@ -233,5 +200,252 @@ a {
   -ms-grid-column: 4;
   grid-area: siff;
   border-right: none;
+}
+
+.photo-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (calc(100vw / 3))[3];
+      grid-template-columns: repeat(3, calc(100vw / 3));
+  -ms-grid-rows: 10vh 45vh 45vh;
+      grid-template-rows: 10vh 45vh 45vh;
+      grid-template-areas: 'nav nav nav' 'mexico steve .' 'still catskills .';
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mexico {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: mexico;
+}
+
+.mexico:hover {
+  background-image: url("/assets/photo/mexico/mexico1.jpg");
+}
+
+.steve {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: steve;
+}
+
+.still-life {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: still;
+}
+
+.catskills {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: catskills;
+}
+
+.painting-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (calc(100vw / 2))[2];
+      grid-template-columns: repeat(2, calc(100vw / 2));
+  -ms-grid-rows: 10vh 90vh;
+      grid-template-rows: 10vh 90vh;
+      grid-template-areas: 'nav nav' 'recent old';
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.old-painting {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: old;
+}
+
+.old-painting:hover {
+  background-image: url("http://placekitten.com/g/600/600");
+}
+
+.recent-painting {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: recent;
+}
+
+.recent-painting:hover {
+  background-image: url("http://placekitten.com/g/600/600");
+}
+
+.about-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (50vw)[2];
+      grid-template-columns: repeat(2, 50vw);
+  -ms-grid-rows: 10vh 45vh 45vh;
+      grid-template-rows: 10vh 45vh 45vh;
+      grid-template-areas: 'nav nav' 'who what' '. .';
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about-photo {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: who;
+}
+
+.about-photo:hover {
+  background-image: url("../assets/me.gif");
+}
+
+.about-text {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: what;
+  border-bottom: 5px solid red;
+  padding: 80px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/*---- BASE ----*/
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+img {
+  width: 100%;
+}
+
+@font-face {
+  font-family: 'scto_regular';
+  src: url(/fonts/SctoGroteskARegular.otf);
+}
+
+html {
+  min-height: 100vh;
+}
+
+body,
+a {
+  font-family: "scto_regular", Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1em;
+  color: #6b7079;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo:hover {
+  color: #ffca00;
+}
+
+/*---- GRID ----*/
+.nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0px 30px;
+}
+
+.home-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (50vw)[2];
+      grid-template-columns: repeat(2, 50vw);
+  -ms-grid-rows: 10vh 45vh 45vh;
+      grid-template-rows: 10vh 45vh 45vh;
+      grid-template-areas: 'nav nav' 'design photo' 'painting .';
+}
+
+/*---- SECTIONS ----*/
+.box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 1px solid #6b7079;
+  border-right: 1px solid #6b7079;
+}
+
+.box:hover {
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.box:hover p {
+  padding: 8px 12px;
+  border: 2px solid #fff;
+  background: #fff;
+}
+
+nav {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: nav;
+}
+
+.design {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: design;
+  border-right: 1px solid #6b7079;
+}
+
+.design:hover {
+  background-image: url("/assets/design/Shortstop/Shortstop_Tote.jpg");
+}
+
+.photo {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: photo;
+  border-right: none;
+}
+
+.photo:hover {
+  background-image: url("/assets/photo/sidewalk/sidewalk-1.jpg");
+}
+
+.painting {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: painting;
+  border-right: 1px solid #6b7079;
+}
+
+.painting:hover {
+  background-image: url("/assets/painting/older/sphinx.jpg");
 }
 /*# sourceMappingURL=style.css.map */
