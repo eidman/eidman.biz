@@ -56,18 +56,15 @@
   border-top: 1px solid #6b7079;
 }
 
-/* 
-.clock-container:hover {
-  background: rgb(107, 112, 121);
-} */
 .clock {
-  border-top: 1px solid #6b7079;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
   grid-area: clock;
   border-radius: 100%;
   background: #fff;
@@ -139,7 +136,7 @@
   width: 12px;
   height: 12px;
   border-radius: 100px;
-  background: white;
+  background: #fff;
   border: 1px solid #6b7079;
   border-radius: 100px;
   margin: auto;
@@ -283,7 +280,7 @@
       grid-template-columns: repeat(2, 50vw);
   -ms-grid-rows: 10vh 45vh 45vh;
       grid-template-rows: 10vh 45vh 45vh;
-      grid-template-areas: 'nav nav' 'who what' '. .';
+      grid-template-areas: 'nav nav' 'who what' 'who clock';
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -291,6 +288,7 @@
 
 .about-photo {
   -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
   -ms-grid-column: 1;
   grid-area: who;
 }
@@ -303,12 +301,19 @@
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: what;
-  border-bottom: 5px solid red;
+  border-bottom: 1px solid #6b7079;
   padding: 80px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.clock-container {
+  border-top: none;
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: clock;
 }
 
 /*---- BASE ----*/

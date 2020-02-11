@@ -5,7 +5,7 @@
   grid-template-areas:
     'nav nav'
     'who what'
-    '. .';
+    'who clock';
   justify-content: center;
 }
 
@@ -18,7 +18,13 @@
 
 .about-text {
   grid-area: what;
-  border-bottom: 5px solid red;
+  border-bottom: $grey-border;
   padding: 80px;
   flex-direction: column;
+}
+
+// CLOCK
+.clock-container {
+  border-top: none;
+  grid-area: clock;
 }

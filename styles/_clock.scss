@@ -1,18 +1,11 @@
 @import 'variables', 'mixins';
 
 .clock-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flexCenter();
   border-top: $grey-border;
 }
-/* 
-.clock-container:hover {
-  background: rgb(107, 112, 121);
-} */
 
 .clock {
-  border-top: $grey-border;
   display: flex;
   align-items: center;
   grid-area: clock;
@@ -81,7 +74,7 @@
   width: 12px;
   height: 12px;
   border-radius: 100px;
-  background: white;
+  background: #fff;
   border: $grey-border;
   border-radius: 100px;
   margin: auto;
