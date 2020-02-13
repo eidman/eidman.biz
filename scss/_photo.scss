@@ -1,0 +1,45 @@
+@import 'variables', 'mixins';
+
+.photo-container {
+  display: grid;
+  grid-template-columns: repeat(3, calc(100vw / 3));
+  grid-template-rows: 8.5vh 45.75vh 45.75vh;
+  grid-template-areas:
+    'nav nav nav'
+    'office mexico steve'
+    'still catskills books';
+  justify-content: center;
+}
+.mexico {
+  grid-area: mexico;
+  &:hover {
+    background-image: url('/assets/photo/mexico/mexico-2.jpg');
+  }
+}
+.office {
+  grid-area: office;
+  &:hover {
+    background-image: url('/assets/photo/office-life/office-19.jpg');
+  }
+}
+.steve {
+  grid-area: steve;
+  &:hover {
+    background-image: url('/assets/photo/steve/steve-1.jpg');
+  }
+}
+
+.still-life {
+  grid-area: still;
+}
+
+.catskills {
+  grid-area: catskills;
+  &:hover {
+    background-image: url('/assets/photo/catskills/catskills-1.jpg');
+  }
+}
+
+.books {
+  grid-area: books;
+}

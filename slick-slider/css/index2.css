@@ -1,0 +1,46 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+img {
+  width: 100%;
+}
+
+/* .slick-prev::before {
+  color: black;
+  content: "<";
+  font-size: 30px;
+}
+
+.slick-next::before {
+  color: black;
+  content: ">";
+  font-size: 30px;
+} */
+
+.kitten-carousel {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.kitten-card {
+  position: relative;
+}
+
+.kitten-card h3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.kitten-button {
+  width: 20px;
+  height: 20px;
+}

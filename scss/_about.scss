@@ -1,0 +1,41 @@
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(2, 50vw);
+  grid-template-rows: 8.5vh 45.75vh 45.75vh;
+  grid-template-areas:
+    'nav nav'
+    'who what'
+    'who clock';
+}
+
+.about-photo {
+  grid-area: who;
+  &:hover {
+    background-image: url('../assets/me.gif');
+  }
+}
+
+.about-text {
+  grid-area: what;
+  border-top: $grey-border;
+  padding: 10%;
+  p {
+    line-height: 1.3em;
+  }
+}
+
+.me {
+  margin-bottom: 30px;
+}
+
+// // CLOCK
+// .clock-container {
+//   border-top: none;
+//   grid-area: clock;
+// }
+
+// @media only screen and (max-width: 600px) {
+//   body {
+//     background-color: lightblue;
+//   }
+// }

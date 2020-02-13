@@ -1,0 +1,45 @@
+@import 'variables', 'mixins', 'clock';
+
+.design-container {
+  display: grid;
+  grid-template-columns: repeat(4, calc(100vw / 4));
+  grid-template-rows: 8.5vh 45.75vh 45.75vh;
+  grid-template-areas:
+    'nav nav nav nav'
+    'shortstop sloth verde siff'
+    'island nb motif clock';
+  justify-content: center;
+}
+
+.clock-container {
+  grid-area: clock;
+}
+
+.shortstop {
+  grid-area: shortstop;
+}
+
+.motif {
+  grid-area: motif;
+}
+
+.sloth {
+  grid-area: sloth;
+}
+
+.island {
+  grid-area: island;
+}
+
+.verde {
+  grid-area: verde;
+}
+
+.new-balance {
+  grid-area: nb;
+}
+
+.siff {
+  grid-area: siff;
+  border-right: none;
+}
