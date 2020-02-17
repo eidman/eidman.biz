@@ -1,60 +1,36 @@
-@import 'variables', 'mixins';
+@import 'mixins', 'hacks', 'options';
 
-.office-container {
-  display: grid;
-  grid-template-columns: repeat(1, 100vw);
-  grid-template-rows: 8.5vh 70vh 20vh;
-  grid-template-areas:
-    'nav'
-    'carousel'
-    'info';
+.image-carousel {
+  margin-top: 15vh;
 }
 
-.project-info {
-  grid-area: info;
-  margin-top: 50px;
-  @include flexCenter();
-  a {
-    &:hover {
-      color: #fff;
-      background-color: $grey;
-      padding: 10px 15px;
+.image-card img {
+  height: 60vh;
+  width: auto;
+  margin: 0 auto;
+}
+
+.slick-slider {
+  .slick-arrow {
+    display: none !important;
+  }
+  &:hover {
+    .slick-arrow {
+      display: block !important;
     }
   }
 }
 
-.carousel-container {
-  grid-area: carousel;
-}
-
-// .arrow-left::before {
-// }
-
-// .arrow-right::before {
-// }
-
-.image-carousel {
-  width: 60vw;
-  margin: 0 auto;
-}
-
-// /* ALL IMAGE CARDS style the image cards however you want */
-// .image-card {
-//   max-height: 100%;
-// }
-
-.arrow {
-  width: 60px;
-  height: 100px;
-  &:hover {
-    background-color: $grey;
-  }
-}
-
-.slick-next {
-  right: -130px;
+.slick-arrow {
+  width: 120px;
+  height: 120px;
 }
 
 .slick-prev {
-  left: -130px;
+  left: 50px;
+  z-index: 1000;
+}
+
+.slick-next {
+  right: 70px;
 }

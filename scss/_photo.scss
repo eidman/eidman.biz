@@ -1,5 +1,6 @@
 @import 'variables', 'mixins';
 
+// !!!!!!!!! PHOTO CONTENT !!!!!!!!!! //
 .photo-container {
   display: grid;
   grid-template-columns: repeat(3, calc(100vw / 3));
@@ -22,11 +23,13 @@
     background-image: url('/assets/photo/office-life/office-19.jpg');
   }
 }
+
 .steve {
   grid-area: steve;
   &:hover {
     background-image: url('/assets/photo/steve/steve-1.jpg');
   }
+  border-right: none;
 }
 
 .still-life {
@@ -42,4 +45,5 @@
 
 .books {
   grid-area: books;
+  border-right: none !important;
 }

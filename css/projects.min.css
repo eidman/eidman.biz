@@ -1,0 +1,2 @@
+.close-button{position:absolute;width:60px;top:20px;left:20px}.info-button{position:absolute;width:60px;top:20px;right:20px}.project-page-container{height:calc(100vh - 40px);background-color:#fff;margin:20px;border:2px solid #6b7079;position:relative}.text-page-container{position:absolute;top:0;z-index:-1;height:100vh;width:100vw;background-color:#6b7079}.text-page-container.show{opacity:1;z-index:1000}.project-title,.project-description{color:#fff}
+/*# sourceMappingURL=projects.min.css.map */

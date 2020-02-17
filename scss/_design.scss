@@ -17,6 +17,9 @@
 
 .shortstop {
   grid-area: shortstop;
+  &:hover {
+    background-image: url('/assets/design/shortstop/shortstop.gif');
+  }
 }
 
 .motif {

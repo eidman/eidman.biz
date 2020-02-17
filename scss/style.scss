@@ -1,5 +1,5 @@
 @import 'variables', 'mixins', 'nav', 'clock', 'design', 'photo', 'painting',
-  'about', 'slider';
+  'about', 'projects', 'slider';
 
 /*---- BASE ----*/
 html {
@@ -20,8 +20,11 @@ img {
 }
 
 @font-face {
-  font-family: 'scto_regular';
-  src: url(/fonts/SctoGroteskARegular.otf);
+  //   font-family: 'favorit_regular';
+  // src: url(/fonts/Favorit_Regular.otf);
+
+  font-family: 'scto-medium';
+  src: url(/fonts/StyreneB-Regular.otf);
 }
 
 html {
@@ -48,6 +51,7 @@ a {
 /*---- GRID ----*/
 
 .nav-container {
+  grid-area: nav;
   @include flexCenter();
   justify-content: space-between;
   margin: 0px 30px;
@@ -72,40 +76,37 @@ a {
   &:hover {
     // font-size: 10vw;
     p {
-      padding: 8px 12px;
-      border: 2px solid #fff;
+      border: $grey-border;
+      // text-shadow: 3px 3px 0px #000;
+      padding: 0.9em 1.2em;
       background: #fff;
     }
     @include backgroundImage();
   }
 }
 
-nav {
-  grid-area: nav;
-}
-
 .design {
   grid-area: design;
-  border-right: $grey-border;
-  &:hover {
-    background-image: url('/assets/design/Shortstop/Shortstop_Tote.jpg');
-  }
+  // border-right: $grey-border;
+  // &:hover {
+  //   background-image: url('/assets/design/Shortstop/Shortstop_Tote.jpg');
+  // }
 }
 
 .photo {
   grid-area: photo;
-  &:hover {
-    background-image: url('/assets/photo/sidewalk/sidewalk-1.jpg');
-  }
+  // &:hover {
+  //   background-image: url('/assets/photo/sidewalk/sidewalk-1.jpg');
+  // }
   border-right: none;
 }
 
 .painting {
   grid-area: painting;
   border-right: $grey-border;
-  &:hover {
-    background-image: url('/assets/painting/older/sphinx.jpg');
-  }
+  // &:hover {
+  //   background-image: url('/assets/painting/older/sphinx.jpg');
+  // }
 }
 
 .clock-container {

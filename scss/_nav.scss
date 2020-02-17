@@ -1,6 +1,11 @@
+.hamburger {
+}
+
 .bonsai {
-  width: 19%;
-  margin-left: 80%;
+  position: absolute;
+  top: 6px;
+  right: 48%;
+  width: 4%;
   &:hover {
     -moz-animation: spinoffPulse 1s infinite linear;
     -webkit-animation: spinoffPulse 1s infinite linear;

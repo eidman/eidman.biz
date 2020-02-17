@@ -9,16 +9,16 @@
     'recent old';
   justify-content: center;
 }
-.old-painting {
+.painting-old {
   grid-area: old;
   &:hover {
-    background-image: url('http://placekitten.com/g/600/600');
+    background-image: url('../assets/painting/older.jpg');
   }
 }
 
-.recent-painting {
+.painting-recent {
   grid-area: recent;
   &:hover {
-    background-image: url('http://placekitten.com/g/600/600');
+    background-image: url('../assets/painting/recent.jpg');
   }
 }
