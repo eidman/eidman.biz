@@ -1,4 +1,4 @@
-@import 'variables', 'mixins', 'clock';
+@import 'variables', 'mixins';
 
 .design-container {
   display: grid;
@@ -6,13 +6,9 @@
   grid-template-rows: 8.5vh 45.75vh 45.75vh;
   grid-template-areas:
     'nav nav nav nav'
-    'shortstop sloth verde siff'
-    'island nb motif clock';
+    'shortstop sloth verde .'
+    'island nb siff .';
   justify-content: center;
-}
-
-.clock-container {
-  grid-area: clock;
 }
 
 .shortstop {
@@ -22,9 +18,9 @@
   }
 }
 
-.motif {
-  grid-area: motif;
-}
+// .motif {
+//   grid-area: motif;
+// }
 
 .sloth {
   grid-area: sloth;
