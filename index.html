@@ -7,7 +7,8 @@
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="vendor/handlebars-v4.7.3.js"></script> -->
     <script type="text/javascript" src="js/navbar.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/clock.js"></script>
+    <script type="text/javascript" src="js/navbar.js"></script>
 
     <!-- VENDOR -->
     <link rel="stylesheet" href="vendor/normalize.css" />
@@ -17,13 +18,24 @@
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
+    <div class="nav-menu-container">
+      <div class="menu-box menu-design">
+        <p class="menu-title">Design</p>
+      </div>
+      <div class="menu-box menu-photo">
+        <p class="menu-title">Photo</p>
+      </div>
+      <div class="menu-box menu-painting">
+        <p class="menu-title">Painting</p>
+      </div>
+    </div>
     <div class="home-container">
       <nav class="nav-container">
         <a class="nav-element logo" href="index.html">Aaron Eidman</a>
         <a class="about" href="pages/about.html"
           ><img class="bonsai" src="assets/bonsai.gif" alt=""
         /></a>
-        <button class="hamburger" type="button">
+        <button class="hamburger hamburger--squeeze" type="button">
           <span class="hamburger-box">
             <span class="hamburger-inner"></span>
           </span>

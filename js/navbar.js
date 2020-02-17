@@ -1,15 +1,21 @@
-// const navBar = Handlebars.compile(`
-//   <nav class="nav-container">
-//     <a class="nav-element logo" href="index.html">Aaron Eidman</a>
-//         <a class="about" href="pages/about.html"><img class="bonsai" src="assets/bonsai.gif" alt=""
-//         /></a>
-//     <a class="nav-element hamburger" href="index.html">Hamburger</a>
-//   </nav>
-// `);
+document.addEventListener('DOMContentLoaded', function() {
+  const hamburger = document.querySelector('.hamburger');
+  const navMenu = document.querySelector('.nav-menu-container');
 
-// $(document).ready(function() {
-//   const data = {};
-//   const compiled = navBar(data);
-//   const $html = $(compiled);
-//   $('body').prepend($html);
+  hamburger.addEventListener('click', function() {
+    hamburger.classList.add('is-active');
+    navMenu.classList.add('show');
+  });
+});
+
+// document.addEventListener('DOMContentLoaded', function () {
+//     let hamburger = document.querySelectorAll('.hamburger');
+//     let navMenu = document.querySelector('.nav-menu-container');
+
+//     hamburger.forEach(function (button) {
+//         button.addEventListener('click', function () {
+//             hamburger.classList.add('is-active');
+//             navMenu.classList.add('show');
+//         });
+//     });
 // });

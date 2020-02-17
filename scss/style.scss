@@ -112,3 +112,48 @@ a {
 .clock-container {
   grid-area: clock;
 }
+
+// !!!!!!!!! NAV MENU !!!!!!!!!! //
+.nav-menu-container {
+  display: grid;
+  grid-template-columns: repeat(3, calc(100vw / 3));
+  grid-template-rows: 8.5vh 91.5vh;
+  grid-template-areas:
+    '. . .'
+    'menu-design menu-photo menu-painting';
+}
+
+.menu-box {
+  @include flexCenter();
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  p {
+    color: #fff;
+  }
+  &:hover {
+    p {
+      border: 2px solid #fff;
+      padding: 0.9em 1.2em;
+    }
+  }
+}
+
+.menu-design {
+  grid-area: menu-design;
+}
+
+.menu-photo {
+  grid-area: menu-photo;
+}
+
+.menu-painting {
+  grid-area: menu-painting;
+  border-right: none;
+}
+
+.menu-title {
+}
+
+button {
+  outline: 0 none;
+}

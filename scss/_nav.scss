@@ -1,5 +1,4 @@
-.hamburger {
-}
+@import 'variables';
 
 .bonsai {
   position: absolute;
@@ -73,4 +72,24 @@
       -webkit-transform: rotate(-360deg);
     }
   }
+}
+
+// !!!!!!!!! NAV MENU MODAL!!!!!!!!!! //
+.nav-menu-container {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  height: 100vh;
+  width: 100vw;
+  background-color: $grey;
+  opacity: 0;
+}
+
+.nav-menu-container.show {
+  opacity: 1;
+  z-index: 1000;
+}
+
+.hamburger {
+  z-index: 2000;
 }
