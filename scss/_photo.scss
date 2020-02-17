@@ -7,8 +7,8 @@
   grid-template-rows: 8.5vh 45.75vh 45.75vh;
   grid-template-areas:
     'nav nav nav'
-    'office mexico steve'
-    'still catskills books';
+    'moving mexico sidewalk'
+    'steve catskills .';
   justify-content: center;
 }
 .mexico {
@@ -17,23 +17,28 @@
     background-image: url('/assets/photo/mexico/mexico-2.jpg');
   }
 }
-.office {
-  grid-area: office;
-  &:hover {
-    background-image: url('/assets/photo/office-life/office-19.jpg');
-  }
-}
 
 .steve {
   grid-area: steve;
   &:hover {
     background-image: url('/assets/photo/steve/steve-1.jpg');
   }
-  border-right: none;
 }
 
-.still-life {
-  grid-area: still;
+.moving-day {
+  grid-area: moving;
+  &:hover {
+    background-image: url('/assets/photo/catskills/catskills-1.jpg');
+  }
+}
+
+.sidewalk {
+  grid-area: sidewalk;
+  &:hover {
+    background-image: url('/assets/photo/catskills/catskills-1.jpg');
+  }
+  border-bottom: $grey-border;
+  border-right: none !important;
 }
 
 .catskills {
@@ -41,9 +46,4 @@
   &:hover {
     background-image: url('/assets/photo/catskills/catskills-1.jpg');
   }
-}
-
-.books {
-  grid-area: books;
-  border-right: none !important;
 }
