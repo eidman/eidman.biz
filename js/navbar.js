@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
-  const hamburger = document.querySelector('.hamburger');
-  const navMenu = document.querySelector('.nav-menu-container');
+  var hamburger = document.querySelector('.hamburger');
+  var navMenu = document.querySelector('.nav-menu-container');
 
   hamburger.addEventListener('click', function() {
     hamburger.classList.add('is-active');
