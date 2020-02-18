@@ -7,8 +7,8 @@
   grid-template-rows: 8.5vh 45.75vh 45.75vh;
   grid-template-areas:
     'nav nav nav'
-    'moving mexico sidewalk'
-    'steve catskills portraits';
+    'moving mexico portraits'
+    'steve catskills sidewalk';
   justify-content: center;
 }
 .mexico {
@@ -47,6 +47,6 @@
 .portraits {
   grid-area: portraits;
   &:hover {
-    background-image: url('/assets/photo/portraits/portraits-1.jpg');
+    background-image: url('/assets/photo/portraits/portraits-6.jpg');
   }
 }

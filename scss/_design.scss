@@ -6,8 +6,8 @@
   grid-template-rows: 8.5vh 45.75vh 45.75vh;
   grid-template-areas:
     'nav nav nav nav'
-    'shortstop sloth verde tsa'
-    'island nb siff .';
+    'shortstop siff verde tsa'
+    'nb sloth island .';
   justify-content: center;
 }
 
@@ -21,7 +21,7 @@
 .sloth {
   grid-area: sloth;
   &:hover {
-    background-image: url('/assets/design/sloth/sloth-1.png');
+    background-image: url('/assets/design/sloth/sloth-1.svg');
   }
 }
 
@@ -50,7 +50,7 @@
   grid-area: siff;
   border-right: none;
   &:hover {
-    background-image: url('/assets/design/siff/siff-10.jpg');
+    background-image: url('/assets/design/siff/siff-hover.jpg');
   }
 }
 
