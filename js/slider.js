@@ -5,8 +5,9 @@ $(document).ready(function() {
     dots: false,
     autoplay: false,
     prevArrow:
-      '<svg class="slick-prev" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 121.36 121.35"><defs><style>.a{fill:none;stroke:#6b7079;stroke-miterlimit:10;stroke-width:2px;}</style></defs><title>arrow</title><polyline class="a" points="56.42 0.68 1.36 60.68 56.42 120.68"/><line class="a" x1="2.17" y1="60.68" x2="121.36" y2="60.68"/></svg>',
+      '<svg class="slick-prev" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.36 51.35"><defs><style>.a{fill:none;stroke:#6b7079;stroke-miterlimit:10;stroke-width:2px;}</style></defs><title>arrow</title><polyline class="a" points="24.3 0.68 1.36 25.68 24.3 50.68"/><line class="a" x1="1.69" y1="25.68" x2="51.36" y2="25.68"/></svg>',
+
     nextArrow:
-      '<svg class="slick-next" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 121.36 121.35"><defs><style>.a{fill:none;stroke:#6b7079;stroke-miterlimit:10;stroke-width:2px;}</style></defs><title>arrow</title><polyline class="a" points="64.94 120.68 120 60.68 64.94 0.68"/><line class="a" x1="119.19" y1="60.68" y2="60.68"/></svg>'
+      '<svg class="slick-next" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.36 51.35"><defs><style>.a{fill:none;stroke:#6b7079;stroke-miterlimit:10;stroke-width:2px;}</style></defs><title>arrow</title><polyline class="a" points="27.06 50.68 50 25.68 27.06 0.68"/><line class="a" x1="49.66" y1="25.68" y2="25.68"/></svg>'
   });
 });

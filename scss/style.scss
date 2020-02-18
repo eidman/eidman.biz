@@ -23,8 +23,8 @@ img {
   //   font-family: 'favorit_regular';
   // src: url(/fonts/Favorit_Regular.otf);
 
-  font-family: 'scto-medium';
-  src: url(/fonts/StyreneB-Regular.otf);
+  font-family: 'font';
+  src: url(/fonts/Favorit_Regular.otf);
 }
 
 html {
@@ -68,6 +68,9 @@ a {
 }
 
 /*---- SECTIONS ----*/
+.box-title {
+  text-align: center;
+}
 
 .box {
   @include flexCenter();

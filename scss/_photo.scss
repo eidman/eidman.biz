@@ -8,7 +8,7 @@
   grid-template-areas:
     'nav nav nav'
     'moving mexico sidewalk'
-    'steve catskills .';
+    'steve catskills portraits';
   justify-content: center;
 }
 .mexico {
@@ -28,22 +28,25 @@
 .moving-day {
   grid-area: moving;
   &:hover {
-    background-image: url('/assets/photo/catskills/catskills-1.jpg');
+    background-image: url('/assets/photo/moving-day/moving-day-12.jpg');
   }
 }
 
 .sidewalk {
   grid-area: sidewalk;
-  &:hover {
-    background-image: url('/assets/photo/catskills/catskills-1.jpg');
-  }
-  border-bottom: $grey-border;
   border-right: none !important;
 }
 
 .catskills {
   grid-area: catskills;
   &:hover {
-    background-image: url('/assets/photo/catskills/catskills-1.jpg');
+    background-image: url('/assets/photo/catskills/catskills-8.jpg');
+  }
+}
+
+.portraits {
+  grid-area: portraits;
+  &:hover {
+    background-image: url('/assets/photo/portraits/portraits-1.jpg');
   }
 }

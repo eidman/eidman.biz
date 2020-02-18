@@ -6,7 +6,7 @@
   grid-template-rows: 8.5vh 45.75vh 45.75vh;
   grid-template-areas:
     'nav nav nav nav'
-    'shortstop sloth verde .'
+    'shortstop sloth verde tsa'
     'island nb siff .';
   justify-content: center;
 }
@@ -14,31 +14,53 @@
 .shortstop {
   grid-area: shortstop;
   &:hover {
-    background-image: url('/assets/design/shortstop/shortstop.gif');
+    background-image: url('/assets/design/shortstop/shortstop-10.gif');
   }
 }
 
-// .motif {
-//   grid-area: motif;
-// }
-
 .sloth {
   grid-area: sloth;
+  &:hover {
+    background-image: url('/assets/design/sloth/sloth-1.png');
+  }
 }
 
 .island {
   grid-area: island;
+  &:hover {
+    background-image: url('/assets/design/island/island-1.jpg');
+  }
 }
 
 .verde {
   grid-area: verde;
+  &:hover {
+    background-image: url('/assets/design/verde/verde-hover.jpg');
+  }
 }
 
-.new-balance {
+.nb {
   grid-area: nb;
+  &:hover {
+    background-image: url('/assets/design/nb/nb-1.jpg');
+  }
 }
 
 .siff {
   grid-area: siff;
   border-right: none;
+  &:hover {
+    background-image: url('/assets/design/siff/siff-10.jpg');
+  }
 }
+
+.tsa {
+  grid-area: tsa;
+  border-right: none;
+  &:hover {
+    background-image: url('/assets/design/tsa/tsa-1.jpg');
+  }
+}
+// .motif {
+//   grid-area: motif;
+// }
