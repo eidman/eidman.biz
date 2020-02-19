@@ -69,3 +69,20 @@
     background-image: url('/assets/design/motif/motif-7.jpg');
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .design-container {
+    grid-template-columns: 100vw;
+    grid-template-rows: 10vh repeat(8, 30vh);
+    grid-template-areas:
+      'nav'
+      'shortstop'
+      'siff'
+      'verde'
+      'tsa'
+      'nb'
+      'sloth'
+      'motif'
+      'island';
+  }
+}

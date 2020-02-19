@@ -2,6 +2,10 @@
   'painting', 'about', 'projects', 'slider';
 
 /*---- BASE ----*/
+@-ms-viewport {
+  width: device-width;
+}
+
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -60,8 +64,9 @@ a {
 .home-container {
   display: grid;
   grid-template-columns: repeat(2, 50vw);
+  // grid-template-columns: repeat(auto-fill, minmax(min(10rem, 100%), 1fr));
   //  grid-template-columns: repeat(auto-fill, minmax(230px, 50vw));
-  grid-template-rows: 8.5vh 45.75vh 45.75vh;
+  grid-template-rows: 8.5vh repeat(2, 45.75vh);
   grid-template-areas:
     'nav nav'
     'design photo'
@@ -106,21 +111,6 @@ a {
 .clock-container {
   grid-area: clock;
 }
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71) {
-  .home-container {
-    display: grid;
-    grid-template-columns: 100vw;
-    grid-template-rows: 10vh 30vh 30vh 30vh;
-    grid-template-areas:
-      'nav'
-      'design'
-      'photo'
-      'painting';
-  }
-  .clock-container {
-    visibility: hidden;
-  }
-}
 
 @media only screen and (max-width: 768px) {
   .home-container {
@@ -134,6 +124,10 @@ a {
       'painting';
   }
   .clock-container {
-    visibility: hidden;
+    display: none;
+  }
+  .box {
+    border-top: $grey-border;
+    border-right: none;
   }
 }
