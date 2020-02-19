@@ -1,14 +1,24 @@
 @import 'variables';
 
 .bonsai {
-  width: 4vw;
-  margin-top: 11px;
-  margin-right: 0;
-  padding-right: 0;
+  position: absolute;
+  top: 6px;
+  width: 4%;
+  right: 48%;
   &:hover {
     -moz-animation: spinoffPulse 1s infinite linear;
     -webkit-animation: spinoffPulse 1s infinite linear;
   }
+
+  // .bonsai {
+  // width: 4vw;
+  // margin-top: 11px;
+  // margin-right: 0;
+  // padding-right: 0;
+  // &:hover {
+  //   -moz-animation: spinoffPulse 1s infinite linear;
+  //   -webkit-animation: spinoffPulse 1s infinite linear;
+  // }
 
   @-moz-keyframes spinPulse {
     0% {
