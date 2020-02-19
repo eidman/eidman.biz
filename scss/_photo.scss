@@ -4,13 +4,33 @@
 .photo-container {
   display: grid;
   grid-template-columns: repeat(3, calc(100vw / 3));
-  grid-template-rows: 8.5vh 45.75vh 45.75vh;
+  grid-template-rows: 8.5vh 45.75vh 45.75vh 45.75vh;
   grid-template-areas:
     'nav nav nav'
     'moving mexico portraits'
-    'steve catskills sidewalk';
+    'steve catskills sidewalk'
+    'enigma celestine arch';
   justify-content: center;
 }
+
+@media only screen and (max-width: 768px) {
+  .photo-container {
+    grid-template-columns: 100vw;
+    grid-template-rows: 10vh repeat(9, 25vh);
+    grid-template-areas:
+      'nav'
+      'moving'
+      'mexico'
+      'portraits'
+      'steve'
+      'catskills'
+      'sidewalk'
+      'enigma'
+      'celestine'
+      'arch';
+  }
+}
+
 .mexico {
   grid-area: mexico;
   &:hover {
@@ -48,5 +68,26 @@
   grid-area: portraits;
   &:hover {
     background-image: url('/assets/photo/portraits/portraits-6.jpg');
+  }
+}
+
+.celestine {
+  grid-area: celestine;
+  &:hover {
+    background-image: url('/assets/photo/celestine/celestine-1.jpg');
+  }
+}
+
+.engima {
+  grid-area: enigma;
+  &:hover {
+    background-image: url('/assets/photo/enigma/enigma-1.jpg');
+  }
+}
+
+.architecture {
+  grid-area: arch;
+  &:hover {
+    background-image: url('/assets/photo/arch/arch-1.jpg');
   }
 }

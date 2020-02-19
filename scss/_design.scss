@@ -7,7 +7,7 @@
   grid-template-areas:
     'nav nav nav nav'
     'shortstop siff verde tsa'
-    'nb sloth island .';
+    'nb sloth motif island';
   justify-content: center;
 }
 
@@ -50,7 +50,7 @@
   grid-area: siff;
   border-right: none;
   &:hover {
-    background-image: url('/assets/design/siff/siff-hover.jpg');
+    background-image: url('/assets/design/siff/siff-11.jpg');
   }
 }
 
@@ -61,6 +61,11 @@
     background-image: url('/assets/design/tsa/tsa-1.jpg');
   }
 }
-// .motif {
-//   grid-area: motif;
-// }
+
+.motif {
+  grid-area: motif;
+  border-right: none;
+  &:hover {
+    background-image: url('/assets/design/motif/motif-7.jpg');
+  }
+}
