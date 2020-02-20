@@ -21,7 +21,7 @@
   height: calc(100vh - 40px);
   border: $grey-border;
   margin: 20px;
-  // @include flexCenter();
+  overflow: hidden;
 }
 
 // !!!!!!!!! PROJECT TEXT MODAL!!!!!!!!!! //
@@ -29,13 +29,13 @@
   position: absolute;
   top: 0;
   z-index: -1;
-  height: 100vh;
-  width: 100vw;
-  background-color: $grey;
   opacity: 0;
 }
 
 .text-page-container.show {
+  height: 100vh;
+  width: 100vw;
+  background-color: $grey;
   opacity: 1;
   z-index: 1000;
 }

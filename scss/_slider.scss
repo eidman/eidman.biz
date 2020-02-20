@@ -12,11 +12,11 @@
 
 .slick-slider {
   .slick-arrow {
-    display: none !important;
+    display: none;
   }
   &:hover {
     .slick-arrow {
-      display: block !important;
+      display: block;
     }
   }
 }
@@ -35,23 +35,21 @@
   right: 70px;
 }
 
-// .slick-prev {
-//   left: 100px;
-//   z-index: 1000;
-// }
+@media only screen and (max-width: 768px) {
+  .image-card img {
+    // height: 60vh;
+    height: 60vh;
+    width: auto;
+  }
+  .image-carousel {
+    margin-top: 18vh;
+  }
 
-// .slick-next {
-//   right: 70px;
-// }
+  .carousel-container {
+    width: calc(100vw - 40px);
+  }
 
-// .button-area-prev {
-//   position: absolute;
-//   left: 0;
-//   height: 80%;
-// }
-
-// .button-area-next {
-//   position: absolute;
-//   right: 0;
-//   height: 100%;
-// }
+  .slick-arrow {
+    display: none !important;
+  }
+}
