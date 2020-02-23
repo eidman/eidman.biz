@@ -1,5 +1,9 @@
 @import 'variables', 'mixins';
 
+div#preload {
+  display: none;
+}
+
 // !!!!!!!!! PHOTO CONTENT !!!!!!!!!! //
 .photo-container {
   display: grid;
@@ -16,21 +20,21 @@
 .mexico {
   grid-area: mexico;
   &:hover {
-    background-image: url('/assets/photo/mexico/mexico-2.jpg');
+    background-image: url('/assets/photo/mexico/mexico-hover.jpg');
   }
 }
 
 .steve {
   grid-area: steve;
   &:hover {
-    background-image: url('/assets/photo/steve/steve-1.jpg');
+    background-image: url('/assets/photo/steve/steve-hover.jpg');
   }
 }
 
 .moving-day {
   grid-area: moving;
   &:hover {
-    background-image: url('/assets/photo/moving-day/moving-day-12.jpg');
+    background-image: url('/assets/photo/moving-day/moving-day-hover.jpg');
   }
 }
 
@@ -42,14 +46,14 @@
 .catskills {
   grid-area: catskills;
   &:hover {
-    background-image: url('/assets/photo/catskills/catskills-8.jpg');
+    background-image: url('/assets/photo/catskills/catskills-hover.jpg');
   }
 }
 
 .portraits {
   grid-area: portraits;
   &:hover {
-    background-image: url('/assets/photo/portraits/portraits-6.jpg');
+    background-image: url('/assets/photo/portraits/portraits-hover.jpg');
   }
 }
 
