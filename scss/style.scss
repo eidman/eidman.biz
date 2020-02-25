@@ -1,5 +1,5 @@
 @import 'variables', 'mixins', 'nav', 'hamburgers', 'clock', 'design', 'photo',
-  'painting', 'about', 'projects';
+  'painting', 'about', 'projects', 'flickity-docs';
 
 /*---- BASE ----*/
 @-ms-viewport {
@@ -49,7 +49,7 @@ a {
 }
 
 .logo:hover {
-  color: #a9abb3;
+  @include opacity();
 }
 
 /*---- GRID ----*/

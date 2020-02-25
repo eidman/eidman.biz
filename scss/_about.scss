@@ -17,16 +17,20 @@
 
 .about-text {
   grid-area: what;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   border-top: $grey-border;
-  padding: 10%;
+  padding: 11%;
   p {
-    line-height: 1.3em;
+    line-height: 1.2em;
   }
 }
 
-.me {
-  margin-bottom: 30px;
-}
+// .me {
+//   margin-bottom: 30px;
+// }
 
 @media only screen and (max-width: 768px) {
   .about-container {

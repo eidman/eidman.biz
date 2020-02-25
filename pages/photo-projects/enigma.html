@@ -4,80 +4,156 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Enigma</title>
-    <!-- jquery -->
-    <script type="text/javascript" src="../../vendor/jquery.min.js"></script>
-    <!-- project js file -->
+    <!-- jQuery -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+    <!-- Flickity -->
     <script type="text/javascript" src="../../js/slider.js"></script>
     <script
       type="text/javascript"
       src="../../vendor/flickity-docs.min.js"
     ></script>
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script type="text/javascript" src="../../vendor/fullscreen.js"></script>
     <!-- modals -->
     <script type="text/javascript" src="../../js/modals.js"></script>
     <!-- reset -->
     <link rel="stylesheet" href="../../vendor/reset.css" />
-    <!-- Slick slider css requirements -->
-    <link rel="stylesheet" href="../../vendor/flickity-docs.css" />
+    <!-- Flickity css requirements -->
+    <link rel="stylesheet" href="../../css/style.min.css" />
+    <!-- <link rel="stylesheet" href="../../vendor/flickity-docs.css" /> -->
     <link
       rel="stylesheet"
       href="https://unpkg.com/flickity@2/dist/flickity.min.css"
     />
-    <link rel="stylesheet" href="../../css/style.min.css" />
   </head>
 
   <body>
     <div class="project-page-container">
       <a href="../photo.html"
-        ><img class="close-button" src="/assets/close-icon.svg" alt=""
-      /></a>
+        ><svg
+          class="close-button"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 50 50"
+        >
+          <defs>
+            <style>
+              .a {
+                fill: #11a748;
+              }
+
+              .b {
+                fill: none;
+                stroke: #11a748;
+                stroke-miterlimit: 10;
+                stroke-width: 2px;
+              }
+            </style>
+          </defs>
+          <path class="a" d="M48,2V48H2V2H48m2-2H0V50H50V0Z" />
+          <line class="b" x1="11" y1="11" x2="39" y2="39" />
+          <line class="b" x1="11.1" y1="39.3" x2="39.1" y2="11.3" /></svg
+      ></a>
+
+      <div class="counter-container">
+        <p class="carousel-counter"></p>
+      </div>
 
       <div class="carousel-container">
-        <div class="image-carousel">
-          <div class="image-card">
-            <img src="../../assets/photo/catskills/catskills-1.jpg" alt="" />
+        <div class="big-button previous-big-button"></div>
+        <div class="big-button next-big-button"></div>
+
+        <div
+          class="carousel flickity"
+          data-flickity='{ "fullscreen": true, "lazyLoad": 1 }'
+        >
+          <div class="carousel-cell">
+            <img
+              class="carousel-cell-image"
+              src="../../assets/photo/enigma/enigma-1.jpg"
+            />
           </div>
-          <div class="image-card">
-            <img src="../../assets/photo/catskills/catskills-2.jpg" alt="" />
+          <div class="carousel-cell">
+            <img
+              class="carousel-cell-image"
+              data-flickity-lazyload="../../assets/photo/enigma/enigma-2.jpg"
+            />
           </div>
-          <div class="image-card">
-            <img src="../../assets/photo/catskills/catskills-3.jpg" alt="" />
+          <div class="carousel-cell">
+            <img
+              class="carousel-cell-image"
+              data-flickity-lazyload="../../assets/photo/enigma/enigma-3.jpg"
+            />
           </div>
-          <div class="image-card">
-            <img src="../../assets/photo/catskills/catskills-4.jpg" alt="" />
+          <div class="carousel-cell">
+            <img
+              class="carousel-cell-image"
+              data-flickity-lazyload="../../assets/photo/enigma/enigma-4.jpg"
+            />
           </div>
-          <div class="image-card">
-            <img src="../../assets/photo/catskills/catskills-5.jpg" alt="" />
+          <div class="carousel-cell">
+            <img
+              class="carousel-cell-image"
+              data-flickity-lazyload="../../assets/photo/enigma/enigma-5.jpg"
+            />
           </div>
-          <div class="image-card">
-            <img src="../../assets/photo/catskills/catskills-6.jpg" alt="" />
+          <div class="carousel-cell">
+            <img
+              class="carousel-cell-image"
+              data-flickity-lazyload="../../assets/photo/enigma/enigma-6.jpg"
+            />
           </div>
-          <div class="image-card">
-            <img src="../../assets/photo/catskills/catskills-7.jpg" alt="" />
+          <div class="carousel-cell">
+            <img
+              class="carousel-cell-image"
+              data-flickity-lazyload="../../assets/photo/enigma/enigma-7.jpg"
+            />
           </div>
-          <div class="image-card">
-            <img src="../../assets/photo/catskills/catskills-8.jpg" alt="" />
+          <div class="carousel-cell">
+            <img
+              class="carousel-cell-image"
+              data-flickity-lazyload="../../assets/photo/enigma/enigma-8.jpg"
+            />
           </div>
-          <div class="image-card">
-            <img src="../../assets/photo/catskills/catskills-9.jpg" alt="" />
+          <div class="carousel-cell">
+            <img
+              class="carousel-cell-image"
+              data-flickity-lazyload="../../assets/photo/enigma/enigma-9.jpg"
+            />
           </div>
-          <div class="image-card">
-            <img src="../../assets/photo/catskills/catskills-10.jpg" alt="" />
+          <div class="carousel-cell">
+            <img
+              class="carousel-cell-image"
+              data-flickity-lazyload="../../assets/photo/enigma/enigma-10.jpg"
+            />
           </div>
-          <div class="image-card">
-            <img src="../../assets/photo/catskills/catskills-11.jpg" alt="" />
+          <div class="carousel-cell">
+            <img
+              class="carousel-cell-image"
+              data-flickity-lazyload="../../assets/photo/enigma/enigma-11.jpg"
+            />
           </div>
-          <div class="image-card">
-            <img src="../../assets/photo/catskills/catskills-12.jpg" alt="" />
+          <div class="carousel-cell">
+            <img
+              class="carousel-cell-image"
+              data-flickity-lazyload="../../assets/photo/enigma/enigma-12.jpg"
+            />
           </div>
-          <div class="image-card">
-            <img src="../../assets/photo/catskills/catskills-13.jpg" alt="" />
+          <div class="carousel-cell">
+            <img
+              class="carousel-cell-image"
+              data-flickity-lazyload="../../assets/photo/enigma/enigma-13.jpg"
+            />
           </div>
-          <div class="image-card">
-            <img src="../../assets/photo/catskills/catskills-14.jpg" alt="" />
+          <div class="carousel-cell">
+            <img
+              class="carousel-cell-image"
+              data-flickity-lazyload="../../assets/photo/enigma/enigma-14.jpg"
+            />
           </div>
-          <div class="image-card">
-            <img src="../../assets/photo/catskills/catskills-15.jpg" alt="" />
+          <div class="carousel-cell">
+            <img
+              class="carousel-cell-image"
+              data-flickity-lazyload="../../assets/photo/enigma/enigma-15.jpg"
+            />
           </div>
         </div>
       </div>

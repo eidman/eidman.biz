@@ -1,16 +1,42 @@
-/* big buttons, no circle */
+.big-button {
+  z-index: 100;
+  position: absolute;
+  top: 15vh;
+  height: 75vh;
+  width: 30vw;
+  &:hover {
+    cursor: pointer;
+    .flickity-prev-next-button .arrow {
+      opacity: 0.25;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.next-big-button {
+  right: 0;
+}
+
+.previous-big-button {
+  left: 0;
+}
+
 .flickity-prev-next-button {
-  width: 65px !important;
-  height: 65px !important;
+  z-index: 500;
+  width: 50px !important;
+  height: 50px !important;
   background: transparent !important;
 }
 
 .flickity-prev-next-button .arrow {
-  fill: #6b7079;
+  fill: #11a748;
 }
 
 .flickity-prev-next-button:hover {
-  background: transparent;
+  /* fill: black; */
+  opacity: 0.25;
 }
 
 .carousel-container {
@@ -41,13 +67,6 @@
 
 .carousel.is-fullscreen .carousel-cell-image {
   max-width: 100%;
-}
-
-.counter-container {
-  font-size: 1.2rem;
-  display: flex;
-  /* justify-content: center; */
-  margin: 0.5em 0 0em 0.5em;
 }
 
 @media screen and (max-width: 768px) {

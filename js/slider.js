@@ -1,10 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
-  var elem = document.querySelector('.carousel');
-  var flkty = new Flickity(elem, {
+  var carousel = document.querySelector('.carousel');
+  var flkty = new Flickity(carousel, {
     // options
     wrapAround: true,
     pageDots: false,
     arrowShape: {
+      // 'M51.36,26.68H3.64L25.04,50l-1.47,1.36L0,25.68L23.57,0l1.47,1.36L3.64,24.68h47.72V26.68z'
       x0: 10,
       x1: 60,
       y1: 50,
@@ -23,10 +24,38 @@ document.addEventListener('DOMContentLoaded', function() {
   updateStatus();
 
   flkty.on('select', updateStatus);
+
+  var previousSlide = document.querySelector('.previous-big-button');
+  var nextSlide = document.querySelector('.next-big-button');
+
+  previousSlide.addEventListener('click', function() {
+    flkty.previous();
+  });
+  nextSlide.addEventListener('click', function() {
+    flkty.next();
+  });
 });
 
-// prevArrow:
-// '<svg class="slick-prev" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.36 51.35"><defs><style>.a{fill:none;stroke:#6b7079;stroke-miterlimit:10;stroke-width:2px;}</style></defs><title>arrow</title><polyline class="a" points="24.3 0.68 1.36 25.68 24.3 50.68"/><line class="a" x1="1.69" y1="25.68" x2="51.36" y2="25.68"/></svg>',
+// // ADVANCE SLIDE ON CLICK
+// var $carousel = $('.carousel').flickity({
+//   initialIndex: 1
+// });
+// var flick = $carousel.data('flickity');
 
-//   nextArrow:
-// '<svg class="slick-next" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51.36 51.35"><defs><style>.a{fill:none;stroke:#6b7079;stroke-miterlimit:10;stroke-width:2px;}</style></defs><title>arrow</title><polyline class="a" points="27.06 50.68 50 25.68 27.06 0.68"/><line class="a" x1="49.66" y1="25.68" y2="25.68"/></svg>'
+// $carousel.on('staticClick.flickity', function (
+//   event,
+//   pointer,
+//   cellElement,
+//   cellIndex
+// ) {
+//   // dismiss if cell was not clicked
+//   if (!cellElement) {
+//     return;
+//   }
+//   // go to next if current cell selected
+//   if (cellIndex == flick.selectedIndex) {
+//     $carousel.flickity('next');
+//   } else {
+//     $carousel.flickity('select', cellIndex);
+//   }
+// });
