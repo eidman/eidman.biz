@@ -44,6 +44,11 @@
   // border: $grey-border;
   margin: 20px;
   overflow: hidden;
+  @media screen and (max-width: 768px) {
+    padding: 16px;
+    margin: 8px;
+    height: calc(100vh - 16px);
+  }
 }
 
 // !!!!!!!!! PROJECT TEXT MODAL!!!!!!!!!! //
@@ -72,16 +77,11 @@
   a {
     color: #fff;
   }
+  @media screen and (max-width: 768px) {
+    padding: 20px 20% 20px 20px;
+  }
 }
 
 .project-title {
   margin-bottom: 1em;
-}
-
-@media screen and (max-width: 768px) {
-  .project-page-container {
-    padding: 16px;
-    margin: 8px;
-    height: calc(100vh - 16px);
-  }
 }
