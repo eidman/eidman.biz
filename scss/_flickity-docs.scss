@@ -4,12 +4,12 @@
   top: 15vh;
   height: 75vh;
   width: 30vw;
-  &:hover {
-    cursor: pointer;
-    .flickity-prev-next-button .arrow {
-      opacity: 0.25;
-    }
-  }
+  // &:hover {
+  //   cursor: pointer;
+  //   .flickity-prev-next-button .arrow {
+  //     opacity: 0.25;
+  //   }
+  // }
   @media screen and (max-width: 768px) {
     display: none;
   }

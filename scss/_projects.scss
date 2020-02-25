@@ -23,6 +23,15 @@
   width: 40px;
   top: 1.8em;
   right: 5em;
+  &:hover {
+    // .a {
+    //   opacity: 0.2;
+    // }
+
+    .b {
+      @include opacity();
+    }
+  }
 }
 
 // !!!!!!!!! SLIDE COUNTER !!!!!!!!!! //
