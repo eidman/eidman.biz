@@ -12,13 +12,13 @@
 .painting-old {
   grid-area: old;
   &:hover {
-    background-image: url('../assets/painting/older.jpg');
+    background-image: url('../assets/painting/older-hover.jpg');
   }
 }
 
 .painting-recent {
   grid-area: recent;
   &:hover {
-    background-image: url('../assets/painting/recent.jpg');
+    background-image: url('../assets/painting/recent-hover.jpg');
   }
 }

@@ -19,12 +19,13 @@
   grid-area: what;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  // justify-content: space-between;
 
   border-top: $grey-border;
   padding: 11%;
   p {
     line-height: 1.2em;
+    margin-bottom: 2em;
   }
 }
 

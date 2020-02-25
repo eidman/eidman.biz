@@ -3,76 +3,168 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shortstop</title>
-    <!-- jquery -->
-    <script type="text/javascript" src="../../vendor/jquery.min.js"></script>
-    <!-- project js file -->
+    <title>Syros International Film Festival</title>
+    <!-- jQuery -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+    <!-- Flickity -->
     <script type="text/javascript" src="../../js/slider.js"></script>
     <script
       type="text/javascript"
       src="../../vendor/flickity-docs.min.js"
     ></script>
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script type="text/javascript" src="../../vendor/fullscreen.js"></script>
     <!-- modals -->
     <script type="text/javascript" src="../../js/modals.js"></script>
     <!-- reset -->
     <link rel="stylesheet" href="../../vendor/reset.css" />
-    <!-- Slick slider css requirements -->
-    <link rel="stylesheet" href="../../vendor/flickity-docs.css" />
+    <!-- Flickity css requirements -->
+    <link rel="stylesheet" href="../../css/style.min.css" />
+    <!-- <link rel="stylesheet" href="../../vendor/flickity-docs.css" /> -->
     <link
       rel="stylesheet"
       href="https://unpkg.com/flickity@2/dist/flickity.min.css"
     />
-    <link rel="stylesheet" href="../../css/style.min.css" />
   </head>
 
   <body>
     <div class="project-page-container">
+      <svg
+        class="info-button"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 40 40"
+      >
+        <defs>
+          <style>
+            .a {
+              fill: #11a748;
+            }
+
+            .b {
+              fill: none;
+              stroke: #11a748;
+              stroke-miterlimit: 10;
+              stroke-width: 2px;
+            }
+          </style>
+        </defs>
+        <path class="a" d="M38,2V38H2V2H38m2-2H0V40H40V0Z" />
+        <circle class="b" cx="20" cy="20" r="11.73" />
+      </svg>
+
       <a href="../design.html"
-        ><img class="close-button" src="/assets/close-icon.svg" alt=""
-      /></a>
-      <img class="info-button" src="/assets/info-icon.svg" alt="" />
+        ><svg
+          class="close-button"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 40 40"
+        >
+          <defs>
+            <style>
+              .a {
+                fill: #11a748;
+              }
+
+              .b {
+                fill: none;
+                stroke: #11a748;
+                stroke-miterlimit: 10;
+                stroke-width: 2px;
+              }
+            </style>
+          </defs>
+          <path class="a" d="M38,2V38H2V2H38m2-2H0V40H40V0Z" />
+          <line class="b" x1="8.8" y1="8.8" x2="31.2" y2="31.2" />
+          <line class="b" x1="8.88" y1="31.44" x2="31.28" y2="9.04" /></svg
+      ></a>
+
+      <div class="counter-container">
+        <p class="carousel-counter"></p>
+      </div>
 
       <div class="carousel-container">
-        <div class="image-carousel">
-          <div class="image-card">
-            <img src="../../assets/design/shortstop/shortstop-1.jpg" alt="" />
+        <div class="big-button previous-big-button"></div>
+        <div class="big-button next-big-button"></div>
+
+        <div
+          class="carousel flickity"
+          data-flickity='{ "fullscreen": true, "lazyLoad": 1 }'
+        >
+          <div class="carousel-cell">
+            <img
+              class="carousel-cell-image"
+              src="../../assets/design/shortstop/shortstop-1.gif"
+            />
           </div>
-          <div class="image-card">
-            <img src="../../assets/design/shortstop/shortstop-2.jpg" alt="" />
+          <div class="carousel-cell">
+            <img
+              class="carousel-cell-image"
+              data-flickity-lazyload="../../assets/design/shortstop/shortstop-2.jpg"
+            />
           </div>
-          <div class="image-card">
-            <img src="../../assets/design/shortstop/shortstop-3.jpg" alt="" />
+          <div class="carousel-cell">
+            <img
+              class="carousel-cell-image"
+              data-flickity-lazyload="../../assets/design/shortstop/shortstop-3.jpg"
+            />
           </div>
-          <div class="image-card">
-            <img src="../../assets/design/shortstop/shortstop-4.gif" alt="" />
+          <div class="carousel-cell">
+            <img
+              class="carousel-cell-image"
+              data-flickity-lazyload="../../assets/design/shortstop/shortstop-4.gif"
+            />
           </div>
-          <div class="image-card">
-            <img src="../../assets/design/shortstop/shortstop-5.jpg" alt="" />
+          <div class="carousel-cell">
+            <img
+              class="carousel-cell-image"
+              data-flickity-lazyload="../../assets/design/shortstop/shortstop-5.jpg"
+            />
           </div>
-          <div class="image-card">
-            <img src="../../assets/design/shortstop/shortstop-6.jpg" alt="" />
+          <div class="carousel-cell">
+            <img
+              class="carousel-cell-image"
+              data-flickity-lazyload="../../assets/design/shortstop/shortstop-6.jpg"
+            />
           </div>
-          <div class="image-card">
-            <img src="../../assets/design/shortstop/shortstop-7.jpg" alt="" />
+          <div class="carousel-cell">
+            <img
+              class="carousel-cell-image"
+              data-flickity-lazyload="../../assets/design/shortstop/shortstop-7.jpg"
+            />
           </div>
-          <div class="image-card">
-            <img src="../../assets/design/shortstop/shortstop-8.jpg" alt="" />
+          <div class="carousel-cell">
+            <img
+              class="carousel-cell-image"
+              data-flickity-lazyload="../../assets/design/shortstop/shortstop-8.jpg"
+            />
           </div>
-          <div class="image-card">
-            <img src="../../assets/design/shortstop/shortstop-9.jpg" alt="" />
+          <div class="carousel-cell">
+            <img
+              class="carousel-cell-image"
+              data-flickity-lazyload="../../assets/design/shortstop/shortstop-9.jpg"
+            />
           </div>
-          <div class="image-card">
-            <img src="../../assets/design/shortstop/shortstop-10.gif" alt="" />
+          <div class="carousel-cell">
+            <img
+              class="carousel-cell-image"
+              data-flickity-lazyload="../../assets/design/shortstop/shortstop-10.gif"
+            />
           </div>
-          <div class="image-card">
-            <img src="../../assets/design/shortstop/shortstop-11.jpg" alt="" />
+          <div class="carousel-cell">
+            <img
+              class="carousel-cell-image"
+              data-flickity-lazyload="../../assets/design/shortstop/shortstop-11.jpg"
+            />
           </div>
-          <div class="image-card">
-            <img src="../../assets/design/shortstop/shortstop-12.jpg" alt="" />
+          <div class="carousel-cell">
+            <img
+              class="carousel-cell-image"
+              data-flickity-lazyload="../../assets/design/shortstop/shortstop-12.jpg"
+            />
           </div>
-          <div class="image-card">
-            <img src="../../assets/design/shortstop/shortstop-13.jpg" alt="" />
+          <div class="carousel-cell">
+            <img
+              class="carousel-cell-image"
+              data-flickity-lazyload="../../assets/design/shortstop/shortstop-13.jpg"
+            />
           </div>
         </div>
       </div>

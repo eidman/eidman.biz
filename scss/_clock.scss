@@ -27,7 +27,7 @@
 .minute,
 .hour {
   position: absolute;
-  height: 60px;
+  height: 27%;
   width: 2px;
   margin: auto;
   top: -27%;
@@ -42,7 +42,7 @@
 
 .minute {
   position: absolute;
-  height: 90px;
+  height: 40%;
   top: -40%;
   left: 0;
   transform: rotate(90deg);
@@ -50,7 +50,7 @@
 
 .second {
   position: absolute;
-  height: 95px;
+  height: 42.5%;
   width: 1px;
   margin: auto;
   top: -42%;

@@ -1,5 +1,9 @@
 @import 'variables', 'mixins';
 
+// div#preload {
+//   display: none;
+// }
+
 .design-container {
   display: grid;
   grid-template-columns: repeat(4, calc(100vw / 4));
@@ -14,21 +18,22 @@
 .shortstop {
   grid-area: shortstop;
   &:hover {
-    background-image: url('/assets/design/shortstop/shortstop-10.gif');
+    background-image: url('/assets/design/shortstop/shortstop-hover.gif');
   }
 }
 
 .sloth {
   grid-area: sloth;
   &:hover {
-    background-image: url('/assets/design/sloth/sloth-1.svg');
+    background-image: url('/assets/design/sloth/sloth-hover.png');
   }
 }
 
 .island {
   grid-area: island;
+  border-right: none !important;
   &:hover {
-    background-image: url('/assets/design/island/island-1.jpg');
+    background-image: url('/assets/design/island/island-hover.jpg');
   }
 }
 
@@ -42,7 +47,7 @@
 .nb {
   grid-area: nb;
   &:hover {
-    background-image: url('/assets/design/nb/nb-1.jpg');
+    background-image: url('/assets/design/nb/nb-hover.jpg');
   }
 }
 
@@ -50,15 +55,15 @@
   grid-area: siff;
   border-right: none;
   &:hover {
-    background-image: url('/assets/design/siff/siff-11.jpg');
+    background-image: url('/assets/design/siff/siff-hover.jpg');
   }
 }
 
 .tsa {
   grid-area: tsa;
-  border-right: none;
+  border-right: none !important;
   &:hover {
-    background-image: url('/assets/design/tsa/tsa-1.jpg');
+    background-image: url('/assets/design/tsa/tsa-hover.jpg');
   }
 }
 
@@ -66,7 +71,7 @@
   grid-area: motif;
   border-right: none;
   &:hover {
-    background-image: url('/assets/design/motif/motif-7.jpg');
+    background-image: url('/assets/design/motif/motif-hover.jpg');
   }
 }
 
