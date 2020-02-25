@@ -78,7 +78,7 @@
 
 .project-info {
   height: 100vh;
-  padding: 20px 50% 20px 20px;
+  padding: 0px 50% 2em 2em;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -87,7 +87,7 @@
     color: #fff;
   }
   @media screen and (max-width: 768px) {
-    padding: 20px 20% 20px 20px;
+    padding: 0px 20% 2em 2em;
   }
 }
 
