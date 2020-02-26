@@ -12,8 +12,8 @@ div#preload {
   grid-template-areas:
     'nav nav nav'
     'moving mexico portraits'
-    'steve catskills sidewalk'
-    'enigma celestine arch';
+    'steve catskills celestine'
+    'enigma sidewalk .';
   justify-content: center;
 }
 
@@ -22,9 +22,6 @@ div#preload {
   &:hover {
     background-image: url('/assets/photo/mexico/mexico-hover.jpg');
   }
-  // @media only screen and (max-width: 768px) {
-  //   background-image: url('/assets/photo/mexico/mexico-hover.jpg');
-  // }
 }
 
 .steve {
@@ -32,9 +29,6 @@ div#preload {
   &:hover {
     background-image: url('/assets/photo/steve/steve-hover.jpg');
   }
-  // @media only screen and (max-width: 768px) {
-  //   background-image: url('/assets/photo/steve/steve-hover.jpg');
-  // }
 }
 
 .moving-day {
@@ -42,17 +36,10 @@ div#preload {
   &:hover {
     background-image: url('/assets/photo/moving-day/moving-day-hover.jpg');
   }
-  // @media only screen and (max-width: 768px) {
-  //   background-image: url('/assets/photo/moving-day/moving-day-hover.jpg');
-  // }
 }
 
 .sidewalk {
   grid-area: sidewalk;
-  border-right: none !important;
-  // @media only screen and (max-width: 768px) {
-  //   background-image: url('/assets/photo/sidewalk/sidewalk-hover.jpg');
-  // }
 }
 
 .catskills {
@@ -60,9 +47,6 @@ div#preload {
   &:hover {
     background-image: url('/assets/photo/catskills/catskills-hover.jpg');
   }
-  // @media only screen and (max-width: 768px) {
-  //   background-image: url('/assets/photo/catskills/catskills-hover.jpg');
-  // }
 }
 
 .portraits {
@@ -70,31 +54,33 @@ div#preload {
   &:hover {
     background-image: url('/assets/photo/portraits/portraits-hover.jpg');
   }
-  // @media only screen and (max-width: 768px) {
-  //   background-image: url('/assets/photo/portraits/portraits-hover.jpg');
-  // }
+  border-right: none !important;
 }
 
 .celestine {
   grid-area: celestine;
-  // &:hover {
-  //   background-image: url('/assets/photo/celestine/celestine-1.jpg');
-  // }
+  border-right: none !important;
+  border-bottom: $grey-border;
+  margin-bottom: -2px;
+  &:hover {
+    background-image: url('/assets/photo/celestine/celestine-hover.jpg');
+  }
 }
 
 .engima {
   grid-area: enigma;
-  // &:hover {
-  //   background-image: url('/assets/photo/enigma/enigma-1.jpg');
-  // }
+  &:hover {
+    background-image: url('/assets/photo/enigma/enigma-hover.jpg');
+  }
 }
 
-.architecture {
-  grid-area: arch;
-  // &:hover {
-  //   background-image: url('/assets/photo/arch/arch-1.jpg');
-  // }
-}
+// .architecture {
+//   grid-area: arch;
+//   border-right: none !important;
+//   &:hover {
+//     background-image: url('/assets/photo/arch/arch-hover.jpg');
+//   }
+// }
 
 @media only screen and (max-width: 768px) {
   .photo-container {
