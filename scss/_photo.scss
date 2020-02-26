@@ -7,13 +7,12 @@ div#preload {
 // !!!!!!!!! PHOTO CONTENT !!!!!!!!!! //
 .photo-container {
   display: grid;
-  grid-template-columns: repeat(3, calc(100vw / 3));
-  grid-template-rows: 8.5vh repeat(3, 45.75vh);
+  grid-template-columns: repeat(4, calc(100vw / 4));
+  grid-template-rows: 8.5vh repeat(2, 45.75vh);
   grid-template-areas:
-    'nav nav nav'
-    'moving mexico portraits'
-    'steve catskills celestine'
-    'enigma sidewalk .';
+    'nav nav nav nav'
+    'moving mexico steve portraits'
+    'sidewalk catskills enigma celestine';
   justify-content: center;
 }
 
@@ -40,6 +39,9 @@ div#preload {
 
 .sidewalk {
   grid-area: sidewalk;
+  &:hover {
+    background-image: url('/assets/tk.jpg');
+  }
 }
 
 .catskills {
@@ -70,7 +72,7 @@ div#preload {
 .engima {
   grid-area: enigma;
   &:hover {
-    background-image: url('/assets/photo/enigma/enigma-hover.jpg');
+    background-image: url('/assets/tk.jpg');
   }
 }
 
