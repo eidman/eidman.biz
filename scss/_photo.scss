@@ -22,11 +22,17 @@ div#preload {
   &:hover {
     background-image: url('/assets/photo/mexico/mexico-hover.jpg');
   }
+  @media only screen and (max-width: 768px) {
+    background-image: url('/assets/photo/mexico/mexico-hover.jpg');
+  }
 }
 
 .steve {
   grid-area: steve;
   &:hover {
+    background-image: url('/assets/photo/steve/steve-hover.jpg');
+  }
+  @media only screen and (max-width: 768px) {
     background-image: url('/assets/photo/steve/steve-hover.jpg');
   }
 }
@@ -36,11 +42,17 @@ div#preload {
   &:hover {
     background-image: url('/assets/photo/moving-day/moving-day-hover.jpg');
   }
+  @media only screen and (max-width: 768px) {
+    background-image: url('/assets/photo/moving-day/moving-day-hover.jpg');
+  }
 }
 
 .sidewalk {
   grid-area: sidewalk;
   border-right: none !important;
+  @media only screen and (max-width: 768px) {
+    background-image: url('/assets/photo/sidewalk/sidewalk-hover.jpg');
+  }
 }
 
 .catskills {
@@ -48,11 +60,17 @@ div#preload {
   &:hover {
     background-image: url('/assets/photo/catskills/catskills-hover.jpg');
   }
+  @media only screen and (max-width: 768px) {
+    background-image: url('/assets/photo/catskills/catskills-hover.jpg');
+  }
 }
 
 .portraits {
   grid-area: portraits;
   &:hover {
+    background-image: url('/assets/photo/portraits/portraits-hover.jpg');
+  }
+  @media only screen and (max-width: 768px) {
     background-image: url('/assets/photo/portraits/portraits-hover.jpg');
   }
 }
@@ -81,14 +99,14 @@ div#preload {
 @media only screen and (max-width: 768px) {
   .photo-container {
     grid-template-columns: 98vw;
-    grid-template-rows: 10vh repeat(9, 25vh);
+    grid-template-rows: 10vh repeat(9, 40vh);
     grid-template-areas:
       'nav'
       'moving'
-      'mexico'
       'portraits'
-      'steve'
       'catskills'
+      'steve'
+      'mexico'
       'sidewalk'
       'enigma'
       'celestine'
