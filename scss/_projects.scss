@@ -16,6 +16,10 @@
       @include opacity();
     }
   }
+  @media screen and (max-width: 768px) {
+    top: 1em;
+    right: 1em;
+  }
 }
 
 .info-button {
@@ -32,6 +36,10 @@
       @include opacity();
     }
   }
+  @media screen and (max-width: 768px) {
+    top: 1em;
+    right: 3.5em;
+  }
 }
 
 // !!!!!!!!! SLIDE COUNTER !!!!!!!!!! //
@@ -42,7 +50,7 @@
   /* justify-content: center; */
   margin: 0.8em 0 0em 0.8em;
   @media screen and (max-width: 768px) {
-    margin: 0.2em 0 0em 0.2em;
+    margin: 0 0 3em 0;
   }
 }
 

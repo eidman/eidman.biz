@@ -19,6 +19,7 @@
   margin-top: 2%;
   @media only screen and (max-width: 768px) {
     margin-right: 22% !important;
+    width: auto;
   }
   &:hover {
     -moz-animation: spinoffPulse 1s infinite linear;
