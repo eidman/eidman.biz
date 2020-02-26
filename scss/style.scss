@@ -43,9 +43,9 @@ a {
   color: $grey;
   text-rendering: optimizeLegibility;
 
-  // @media only screen and (max-width: 768px) {
-  //   font-size: 1.2rem;
-  // }
+  @media only screen and (max-width: 768px) {
+    font-size: 1.2rem;
+  }
 }
 
 a {
@@ -80,14 +80,14 @@ a {
 /*---- SECTIONS ----*/
 .box-title {
   text-align: center;
-  @media only screen and (max-width: 768px) {
-    visibility: hidden;
-  }
+  // @media only screen and (max-width: 768px) {
+  //   visibility: hidden;
+  // }
 }
 
-.box-title.index {
-  visibility: visible;
-}
+// .box-title.index {
+//   visibility: visible;
+// }
 
 .box {
   @include flexCenter();
@@ -105,10 +105,10 @@ a {
     @include backgroundImage();
   }
 
-  @media only screen and (max-width: 768px) {
-    background-size: cover;
-    background-position: center;
-  }
+  // @media only screen and (max-width: 768px) {
+  //   background-size: cover;
+  //   background-position: center;
+  // }
 }
 
 .design {

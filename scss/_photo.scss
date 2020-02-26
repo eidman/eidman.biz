@@ -22,9 +22,9 @@ div#preload {
   &:hover {
     background-image: url('/assets/photo/mexico/mexico-hover.jpg');
   }
-  @media only screen and (max-width: 768px) {
-    background-image: url('/assets/photo/mexico/mexico-hover.jpg');
-  }
+  // @media only screen and (max-width: 768px) {
+  //   background-image: url('/assets/photo/mexico/mexico-hover.jpg');
+  // }
 }
 
 .steve {
@@ -32,9 +32,9 @@ div#preload {
   &:hover {
     background-image: url('/assets/photo/steve/steve-hover.jpg');
   }
-  @media only screen and (max-width: 768px) {
-    background-image: url('/assets/photo/steve/steve-hover.jpg');
-  }
+  // @media only screen and (max-width: 768px) {
+  //   background-image: url('/assets/photo/steve/steve-hover.jpg');
+  // }
 }
 
 .moving-day {
@@ -42,17 +42,17 @@ div#preload {
   &:hover {
     background-image: url('/assets/photo/moving-day/moving-day-hover.jpg');
   }
-  @media only screen and (max-width: 768px) {
-    background-image: url('/assets/photo/moving-day/moving-day-hover.jpg');
-  }
+  // @media only screen and (max-width: 768px) {
+  //   background-image: url('/assets/photo/moving-day/moving-day-hover.jpg');
+  // }
 }
 
 .sidewalk {
   grid-area: sidewalk;
   border-right: none !important;
-  @media only screen and (max-width: 768px) {
-    background-image: url('/assets/photo/sidewalk/sidewalk-hover.jpg');
-  }
+  // @media only screen and (max-width: 768px) {
+  //   background-image: url('/assets/photo/sidewalk/sidewalk-hover.jpg');
+  // }
 }
 
 .catskills {
@@ -60,9 +60,9 @@ div#preload {
   &:hover {
     background-image: url('/assets/photo/catskills/catskills-hover.jpg');
   }
-  @media only screen and (max-width: 768px) {
-    background-image: url('/assets/photo/catskills/catskills-hover.jpg');
-  }
+  // @media only screen and (max-width: 768px) {
+  //   background-image: url('/assets/photo/catskills/catskills-hover.jpg');
+  // }
 }
 
 .portraits {
@@ -70,9 +70,9 @@ div#preload {
   &:hover {
     background-image: url('/assets/photo/portraits/portraits-hover.jpg');
   }
-  @media only screen and (max-width: 768px) {
-    background-image: url('/assets/photo/portraits/portraits-hover.jpg');
-  }
+  // @media only screen and (max-width: 768px) {
+  //   background-image: url('/assets/photo/portraits/portraits-hover.jpg');
+  // }
 }
 
 .celestine {
