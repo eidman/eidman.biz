@@ -14,11 +14,15 @@
   &:hover {
     background-image: url('../assets/painting/older-hover.jpg');
   }
+  border-right: none !important;
 }
 
 .painting-recent {
   grid-area: recent;
   &:hover {
     background-image: url('../assets/painting/recent-hover.jpg');
+  }
+  @media only screen and (max-width: 768px) {
+    border-right: $grey-border !important;
   }
 }
