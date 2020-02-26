@@ -20,6 +20,9 @@
   &:hover {
     background-image: url('/assets/design/shortstop/shortstop-hover.gif');
   }
+  @media only screen and (max-width: 768px) {
+    background-image: url('/assets/design/shortstop/shortstop-9.jpg');
+  }
 }
 
 .sloth {
@@ -42,11 +45,17 @@
   &:hover {
     background-image: url('/assets/design/verde/verde-hover.jpg');
   }
+  @media only screen and (max-width: 768px) {
+    background-image: url('/assets/design/verde/verde-hover.jpg');
+  }
 }
 
 .nb {
   grid-area: nb;
   &:hover {
+    background-image: url('/assets/design/nb/nb-hover.jpg');
+  }
+  @media only screen and (max-width: 768px) {
     background-image: url('/assets/design/nb/nb-hover.jpg');
   }
 }
@@ -57,12 +66,18 @@
   &:hover {
     background-image: url('/assets/design/siff/siff-hover.jpg');
   }
+  @media only screen and (max-width: 768px) {
+    background-image: url('/assets/design/siff/siff-hover.jpg');
+  }
 }
 
 .tsa {
   grid-area: tsa;
   border-right: none !important;
   &:hover {
+    background-image: url('/assets/design/tsa/tsa-hover.jpg');
+  }
+  @media only screen and (max-width: 768px) {
     background-image: url('/assets/design/tsa/tsa-hover.jpg');
   }
 }
@@ -73,12 +88,15 @@
   &:hover {
     background-image: url('/assets/design/motif/motif-hover.jpg');
   }
+  @media only screen and (max-width: 768px) {
+    background-image: url('/assets/design/motif/motif-hover.jpg');
+  }
 }
 
 @media only screen and (max-width: 768px) {
   .design-container {
     grid-template-columns: 100vw;
-    grid-template-rows: 10vh repeat(8, 30vh);
+    grid-template-rows: 10vh repeat(8, 40vh);
     grid-template-areas:
       'nav'
       'shortstop'
@@ -91,3 +109,14 @@
       'island';
   }
 }
+
+// @media only screen and (max-width: 1068px) {
+//   .design-container {
+//     grid-template-columns: calc(100vw / 3);
+//     grid-template-rows: 10vh repeat(3, 50vh);
+//     grid-template-areas:
+//       'nav shortstop siff'
+//       'verde tsa nb'
+//       'sloth motif island';
+//   }
+// }

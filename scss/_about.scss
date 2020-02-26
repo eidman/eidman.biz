@@ -8,10 +8,24 @@
     'who clock';
 }
 
+.abe {
+  opacity: 0;
+  height: 100%;
+  width: auto;
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    height: auto;
+    opacity: 1;
+  }
+}
+
 .about-photo {
   grid-area: who;
+  overflow: hidden;
   &:hover {
-    background-image: url('../assets/me.gif');
+    .abe {
+      opacity: 1;
+    }
   }
 }
 
@@ -41,10 +55,6 @@
       'nav'
       'who'
       'what';
-  }
-
-  .about-photo {
-    background-image: url('../assets/me.gif');
   }
 }
 //   // .clock-container,

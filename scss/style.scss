@@ -42,6 +42,10 @@ a {
   line-height: 1.4em;
   color: $grey;
   text-rendering: optimizeLegibility;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 1.2rem;
+  }
 }
 
 a {
@@ -82,15 +86,27 @@ a {
   @include flexCenter();
   border-top: $grey-border;
   border-right: $grey-border;
+  p {
+    padding: 1em;
+  }
   &:hover {
-    // font-size: 10vw;
     p {
       border: $grey-border;
-      // text-shadow: 3px 3px 0px #000;
       padding: 0.9em 1.2em;
       background: #fff;
     }
     @include backgroundImage();
+  }
+
+  @media only screen and (max-width: 768px) {
+    background-size: cover;
+    background-position: center;
+
+    p {
+      border: $grey-border;
+      padding: 0.9em 1.2em;
+      background: #fff;
+    }
   }
 }
 
