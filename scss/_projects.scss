@@ -2,43 +2,30 @@
 
 // !!!!!!!!! BUTTONS !!!!!!!!!! //
 
-.close-button {
+.project-button {
   position: absolute;
   width: 40px;
   top: 1.8em;
   right: 2em;
   &:hover {
-    // .a {
-    //   opacity: 0.2;
-    // }
-
+    cursor: pointer;
     .b {
       @include opacity();
     }
   }
   @media screen and (max-width: 768px) {
-    top: 1em;
-    right: 1em;
+    top: 1.5em;
+    right: 1.5em;
   }
 }
 
 .info-button {
-  position: absolute;
-  width: 40px;
-  top: 1.8em;
   right: 5em;
-  &:hover {
-    // .a {
-    //   opacity: 0.2;
-    // }
-
-    .b {
-      @include opacity();
-    }
+  @media screen and (max-width: 768px) {
+    right: 4em;
   }
   @media screen and (max-width: 768px) {
-    top: 1em;
-    right: 3.5em;
+    right: 4.5em;
   }
 }
 
@@ -86,19 +73,36 @@
 
 .project-info {
   height: 100vh;
-  padding: 0px 50% 2em 2em;
+  // width: 100vw;
+  padding: 2em 50% 0 2em;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  // flex-direction: column;
+  // justify-content: flex-end;
   color: #fff;
   a {
     color: #fff;
+    &:hover {
+      background-color: white;
+      color: $grey;
+    }
   }
   @media screen and (max-width: 768px) {
-    padding: 0px 20% 2em 2em;
+    flex-direction: column;
+    padding: 1.5em 40% 0 1.5em;
   }
 }
 
 .project-title {
+  font-size: 0.8rem;
+  width: 55%;
+  margin-bottom: 1em;
+  margin-right: 4em;
+  @media screen and (max-width: 768px) {
+    font-size: 1rem;
+  }
+}
+
+.project-cred,
+.project-description {
   margin-bottom: 1em;
 }
