@@ -39,11 +39,7 @@
     -webkit-animation: spinoffPulse 1s infinite linear;
   }
   @media only screen and (max-width: 768px) {
-    // position: absolute;
-    // top: -1.5%;
-    // left: 25.5%;
-    // width: 6%;
-    position: fixed;
+    display: none;
   }
 
   // !!!!!!!!! Bonsai Animation !!!!!!!!!! //
