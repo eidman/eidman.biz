@@ -8,6 +8,7 @@ div#preload {
 // !!!!!!!!! Design Project Grid !!!!!!!!!! //
 
 .design-container {
+  overflow: hidden;
   display: grid;
   grid-template-columns: repeat(4, calc(100vw / 4));
   grid-template-rows: 8.5vh 45.75vh 45.75vh;
