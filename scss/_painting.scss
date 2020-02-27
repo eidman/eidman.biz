@@ -9,7 +9,12 @@
   grid-template-areas:
     'nav nav'
     'recent old';
-  justify-content: center;
+  @media only screen and (max-width: 768px) {
+    grid-template-rows: 10vh 91.5vh;
+    grid-template-areas:
+      'nav nav'
+      'recent old';
+  }
 }
 .painting-old {
   grid-area: old;

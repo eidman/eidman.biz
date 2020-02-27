@@ -1,5 +1,18 @@
 @import 'variables';
 
+// !!!!!!!!! Nav Container !!!!!!!!!! //
+
+.nav-container {
+  grid-area: nav;
+  @include flexCenter();
+  justify-content: space-between;
+  margin: 0px 20px;
+  @media only screen and (max-width: 768px) {
+    line-height: 1em;
+    // position: fixed;
+  }
+}
+
 // !!!!!!!!! Aaron Eidman !!!!!!!!!! //
 
 .logo {
@@ -24,6 +37,13 @@
   &:hover {
     -moz-animation: spinoffPulse 1s infinite linear;
     -webkit-animation: spinoffPulse 1s infinite linear;
+  }
+  @media only screen and (max-width: 768px) {
+    // position: absolute;
+    // top: -1.5%;
+    // left: 25.5%;
+    // width: 6%;
+    position: fixed;
   }
 
   // !!!!!!!!! Bonsai Animation !!!!!!!!!! //
@@ -92,7 +112,7 @@
   }
 }
 
-// !!!!!!!!! Nav Menu Modal !!!!!!!!!! //
+// !!!!!!!!! Nav Menu Show/Hide !!!!!!!!!! //
 .nav-menu-container {
   position: absolute;
   top: 0;
@@ -107,10 +127,17 @@
   opacity: 1;
   z-index: 1000;
   position: fixed;
+  overflow-y: hidden;
 }
 
 .hamburger {
   z-index: 2000;
+  margin-top: 0.5% !important;
+  @media only screen and (max-width: 768px) {
+    position: absolute;
+    right: 15px;
+    position: fixed;
+  }
 }
 
 // !!!!!!!!! Nav Menu Grid !!!!!!!!!! //
@@ -124,13 +151,13 @@
     'menu-design menu-photo menu-painting';
   @media only screen and (max-width: 768px) {
     grid-template-columns: 100vw;
-    grid-template-rows: 10vh repeat(3, 30vh);
+    grid-template-rows: 10vh repeat(4, 22.5vh);
     grid-template-areas:
       'nav'
       'menu-design'
       'menu-photo'
-      'menu-painting';
-    border-right: none;
+      'menu-painting'
+      'menu-about';
   }
 }
 
@@ -148,8 +175,16 @@
     }
   }
   @media only screen and (max-width: 768px) {
+    &:hover {
+      p {
+        border: none;
+      }
+    }
     border-right: none;
   }
+}
+.menu-about {
+  grid-area: menu-about;
 }
 
 .menu-design {

@@ -60,20 +60,13 @@ a {
   @media only screen and (max-width: 768px) {
     display: grid;
     grid-template-columns: 100vw;
-    grid-template-rows: 10vh 30vh 30vh 30vh;
+    grid-template-rows: 10vh repeat(3, 30vh);
     grid-template-areas:
       'nav'
       'design'
       'photo'
       'painting';
   }
-}
-
-.nav-container {
-  grid-area: nav;
-  @include flexCenter();
-  justify-content: space-between;
-  margin: 0px 20px;
 }
 
 .box-title {

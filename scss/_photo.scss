@@ -90,10 +90,10 @@
     &:hover {
       background-image: url('/assets/photo/portraits/portraits-hover.jpg');
     }
+    border-right: none !important;
+    border-bottom: $grey-border;
+    margin-bottom: -2px;
   }
-  border-right: none !important;
-  border-bottom: $grey-border;
-  margin-bottom: -2px;
 }
 
 .celestine {
