@@ -88,7 +88,7 @@
   }
   @media screen and (max-width: 768px) {
     flex-direction: column;
-    padding: 1.5em 40% 0 1.5em;
+    padding: 1.5em 36% 0 1.5em;
   }
 }
 
@@ -96,10 +96,11 @@
   font-size: 0.8rem;
   line-height: 1.4em;
   width: 55%;
-  margin-bottom: 1em;
   margin-right: 4em;
   @media screen and (max-width: 768px) {
+    width: 100%;
     font-size: 1rem;
+    margin-bottom: 1.5em;
   }
 }
 

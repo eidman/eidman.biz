@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // options
     wrapAround: true,
     pageDots: false,
+    imagesLoaded: true,
     selectedAttraction: 0.03,
     friction: 0.35,
     arrowShape: {
