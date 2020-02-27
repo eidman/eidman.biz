@@ -10,11 +10,10 @@
 
 .abe {
   opacity: 0;
-  height: 100%;
+  min-height: 100%;
+  height: auto;
   width: auto;
   @media only screen and (max-width: 768px) {
-    width: 100%;
-    height: auto;
     opacity: 1;
   }
 }
