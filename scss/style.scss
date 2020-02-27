@@ -49,17 +49,22 @@ a {
   text-decoration: none;
 }
 
-.logo:hover {
-  @include opacity();
-}
+.logo {
+  &:hover {
+    @include opacity();
+  }
 
+  // @media only screen and (max-width: 768px) {
+  //   font-size: 0.8em;
+  // }
+}
 /*---- GRID ----*/
 
 .nav-container {
   grid-area: nav;
   @include flexCenter();
   justify-content: space-between;
-  margin: 0px 30px;
+  margin: 0px 20px;
 }
 
 .home-container {
