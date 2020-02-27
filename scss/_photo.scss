@@ -9,7 +9,7 @@
   grid-template-areas:
     'nav nav nav nav'
     'moving mexico steve portraits'
-    'sidewalk catskills celestine .';
+    'bayside catskills celestine .';
   justify-content: center;
   @media only screen and (max-width: 1068px) {
     grid-template-columns: 50vw 50vw;
@@ -18,7 +18,7 @@
       'nav nav'
       'moving portraits'
       'catskills steve'
-      'mexico sidewalk'
+      'mexico bayside'
       'celestine arch';
   }
 
@@ -32,7 +32,7 @@
       'catskills'
       'steve'
       'mexico'
-      'sidewalk'
+      'bayside'
       'celestine';
   }
 }
@@ -66,11 +66,11 @@
   }
 }
 
-.sidewalk {
-  grid-area: sidewalk;
+.bayside {
+  grid-area: bayside;
   @media only screen and (min-width: 768px) {
     &:hover {
-      background-image: url('/assets/tk.jpg');
+      background-image: url('/assets/photo/bayside/bayside-hover.jpg');
     }
   }
 }
