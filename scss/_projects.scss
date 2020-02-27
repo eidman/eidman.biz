@@ -78,6 +78,9 @@
   @media screen and (max-width: 768px) {
     flex-direction: column;
     padding: 1.5em 36% 0 1.5em;
+    a {
+      border-bottom: 1px solid #fff;
+    }
   }
 }
 
