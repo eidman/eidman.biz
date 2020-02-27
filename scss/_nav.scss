@@ -1,5 +1,18 @@
 @import 'variables';
 
+// !!!!!!!!! Aaron Eidman !!!!!!!!!! //
+
+.logo {
+  &:hover {
+    @include opacity();
+  }
+  @media only screen and (max-width: 768px) {
+    line-height: 1em;
+  }
+}
+
+// !!!!!!!!! About/Bonsai !!!!!!!!!! //
+
 .about {
   z-index: 2000;
 }
@@ -12,6 +25,8 @@
     -moz-animation: spinoffPulse 1s infinite linear;
     -webkit-animation: spinoffPulse 1s infinite linear;
   }
+
+  // !!!!!!!!! Bonsai Animation !!!!!!!!!! //
 
   @-moz-keyframes spinPulse {
     0% {
@@ -77,7 +92,7 @@
   }
 }
 
-// !!!!!!!!! NAV MENU MODAL!!!!!!!!!! //
+// !!!!!!!!! Nav Menu Modal !!!!!!!!!! //
 .nav-menu-container {
   position: absolute;
   top: 0;
@@ -98,7 +113,8 @@
   z-index: 2000;
 }
 
-// !!!!!!!!! NAV MENU !!!!!!!!!! //
+// !!!!!!!!! Nav Menu Grid !!!!!!!!!! //
+
 .nav-menu-container {
   display: grid;
   grid-template-columns: repeat(3, calc(100vw / 3));
@@ -106,6 +122,16 @@
   grid-template-areas:
     '. . .'
     'menu-design menu-photo menu-painting';
+  @media only screen and (max-width: 768px) {
+    grid-template-columns: 100vw;
+    grid-template-rows: 10vh repeat(3, 30vh);
+    grid-template-areas:
+      'nav'
+      'menu-design'
+      'menu-photo'
+      'menu-painting';
+    border-right: none;
+  }
 }
 
 .menu-box {
@@ -120,6 +146,9 @@
       border: 2px solid #fff;
       padding: 0.9em 1.2em;
     }
+  }
+  @media only screen and (max-width: 768px) {
+    border-right: none;
   }
 }
 
@@ -138,25 +167,4 @@
 
 button {
   outline: 0 none;
-}
-
-@media only screen and (max-width: 768px) {
-  .nav-menu-container {
-    grid-template-columns: 100vw;
-    grid-template-rows: 10vh repeat(3, 30vh);
-    grid-template-areas:
-      'nav'
-      'menu-design'
-      'menu-photo'
-      'menu-painting';
-    border-right: none;
-  }
-  .menu-box {
-    border-right: none;
-  }
-
-  .bonsai {
-    width: 24%;
-    margin-right: 30%;
-  }
 }

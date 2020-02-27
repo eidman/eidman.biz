@@ -1,15 +1,14 @@
+// !!!!!!!!! Hidden Button Areas !!!!!!!!!! //
+
 .big-button {
   z-index: 100;
   position: absolute;
   top: 15vh;
   height: 75vh;
   width: 30vw;
-  // &:hover {
-  //   cursor: pointer;
-  //   .flickity-prev-next-button .arrow {
-  //     opacity: 0.25;
-  //   }
-  // }
+  &:hover {
+    cursor: pointer;
+  }
   @media screen and (max-width: 768px) {
     display: none;
   }
@@ -23,11 +22,16 @@
   left: 0;
 }
 
+// !!!!!!!!! Prev + Next Buttons !!!!!!!!!! //
+
 .flickity-prev-next-button {
   z-index: 500;
   width: 50px !important;
   height: 50px !important;
   background: transparent !important;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 
 .flickity-prev-next-button .arrow {
@@ -39,8 +43,10 @@
   opacity: 0.25;
 }
 
+// !!!!!!!!! Carousel !!!!!!!!!! //
+
 .carousel-container {
-  margin-top: 6vh;
+  margin-top: 7vh;
 }
 
 .carousel-cell {
@@ -67,10 +73,4 @@
 
 .carousel.is-fullscreen .carousel-cell-image {
   max-width: 100%;
-}
-
-@media screen and (max-width: 768px) {
-  .flickity-prev-next-button {
-    display: none;
-  }
 }

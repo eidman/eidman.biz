@@ -1,5 +1,7 @@
 @import 'variables', 'mixins';
 
+// !!!!!!!!! Painting Grid !!!!!!!!!! //
+
 .painting-container {
   display: grid;
   grid-template-columns: repeat(2, calc(100vw / 2));

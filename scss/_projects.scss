@@ -1,12 +1,18 @@
 @import 'variables', 'mixins';
 
-// !!!!!!!!! BUTTONS !!!!!!!!!! //
+// !!!!!!!!! Project Page !!!!!!!!!! //
+
+.project-page-container {
+  margin: 20px;
+}
+
+// !!!!!!!!! Buttons !!!!!!!!!! //
 
 .project-button {
   position: absolute;
   width: 40px;
-  top: 1.8em;
-  right: 2em;
+  top: 20px;
+  right: 20px;
   &:hover {
     cursor: pointer;
     .b {
@@ -14,48 +20,31 @@
     }
   }
   @media screen and (max-width: 768px) {
-    top: 1.5em;
-    right: 1.5em;
+    // top: 15px;
+    // right: 15px;
   }
 }
 
 .info-button {
-  right: 5em;
+  right: 68px;
   @media screen and (max-width: 768px) {
-    right: 4em;
-  }
-  @media screen and (max-width: 768px) {
-    right: 4.5em;
+    right: 65px;
   }
 }
 
-// !!!!!!!!! SLIDE COUNTER !!!!!!!!!! //
+// !!!!!!!!! Slide Counter !!!!!!!!!! //
 
 .counter-container {
   font-size: 1.2rem;
   display: flex;
-  /* justify-content: center; */
-  margin: 0.8em 0 0em 0.8em;
+  margin: 25px 0 0em 10px;
   @media screen and (max-width: 768px) {
-    margin: 0 0 3em 0;
+    margin: 0 0 10vh 0;
   }
 }
 
-// !!!!!!!!! IMAGE VIEWER !!!!!!!!!! //
+// !!!!!!!!! Project Info Modal !!!!!!!!!! //
 
-.project-page-container {
-  height: calc(100vh - 40px);
-  // border: $grey-border;
-  margin: 20px;
-  overflow: hidden;
-  @media screen and (max-width: 768px) {
-    padding: 16px;
-    margin: 8px;
-    height: calc(100vh - 16px);
-  }
-}
-
-// !!!!!!!!! PROJECT TEXT MODAL!!!!!!!!!! //
 .text-page-container {
   position: absolute;
   top: 0;
