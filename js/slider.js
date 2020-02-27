@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // options
     wrapAround: true,
     pageDots: false,
+    selectedAttraction: 0.03,
+    friction: 0.35,
     arrowShape: {
       // 'M51.36,26.68H3.64L25.04,50l-1.47,1.36L0,25.68L23.57,0l1.47,1.36L3.64,24.68h47.72V26.68z'
       x0: 10,

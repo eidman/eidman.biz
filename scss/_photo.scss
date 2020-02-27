@@ -14,43 +14,55 @@
 
 .mexico {
   grid-area: mexico;
-  &:hover {
-    background-image: url('/assets/photo/mexico/mexico-hover.jpg');
+  @media only screen and (min-width: 768px) {
+    &:hover {
+      background-image: url('/assets/photo/mexico/mexico-hover.jpg');
+    }
   }
 }
 
 .steve {
   grid-area: steve;
-  &:hover {
-    background-image: url('/assets/photo/steve/steve-hover.jpg');
+  @media only screen and (min-width: 768px) {
+    &:hover {
+      background-image: url('/assets/photo/steve/steve-hover.jpg');
+    }
   }
 }
 
 .moving-day {
   grid-area: moving;
-  &:hover {
-    background-image: url('/assets/photo/moving-day/moving-day-hover.jpg');
+  @media only screen and (min-width: 768px) {
+    &:hover {
+      background-image: url('/assets/photo/moving-day/moving-day-hover.jpg');
+    }
   }
 }
 
 .sidewalk {
   grid-area: sidewalk;
-  &:hover {
-    background-image: url('/assets/tk.jpg');
+  @media only screen and (min-width: 768px) {
+    &:hover {
+      background-image: url('/assets/tk.jpg');
+    }
   }
 }
 
 .catskills {
   grid-area: catskills;
-  &:hover {
-    background-image: url('/assets/photo/catskills/catskills-hover.jpg');
+  @media only screen and (min-width: 768px) {
+    &:hover {
+      background-image: url('/assets/photo/catskills/catskills-hover.jpg');
+    }
   }
 }
 
 .portraits {
   grid-area: portraits;
-  &:hover {
-    background-image: url('/assets/photo/portraits/portraits-hover.jpg');
+  @media only screen and (min-width: 768px) {
+    &:hover {
+      background-image: url('/assets/photo/portraits/portraits-hover.jpg');
+    }
   }
   border-right: none !important;
   border-bottom: $grey-border;
@@ -61,8 +73,10 @@
   grid-area: celestine;
   border-bottom: $grey-border;
   margin-bottom: -2px;
-  &:hover {
-    background-image: url('/assets/photo/celestine/celestine-hover.jpg');
+  @media only screen and (min-width: 768px) {
+    &:hover {
+      background-image: url('/assets/photo/celestine/celestine-hover.jpg');
+    }
   }
 }
 
@@ -83,18 +97,31 @@
 
 @media only screen and (max-width: 768px) {
   .photo-container {
-    grid-template-columns: 98vw;
-    grid-template-rows: 10vh repeat(9, 40vh);
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: 10vh repeat(4, 25vh);
     grid-template-areas:
-      'nav'
-      'moving'
-      'portraits'
-      'catskills'
-      'steve'
-      'mexico'
-      'sidewalk'
-      'enigma'
-      'celestine'
-      'arch';
+      'nav nav'
+      'moving portraits'
+      'catskills steve'
+      'mexico sidewalk'
+      'celestine arch';
   }
 }
+
+// @media only screen and (max-width: 768px) {
+//   .photo-container {
+//     grid-template-columns: 98vw;
+//     grid-template-rows: 10vh repeat(9, 40vh);
+//     grid-template-areas:
+//       'nav'
+//       'moving'
+//       'portraits'
+//       'catskills'
+//       'steve'
+//       'mexico'
+//       'sidewalk'
+//       'enigma'
+//       'celestine'
+//       'arch';
+//   }
+// }

@@ -17,30 +17,38 @@ div#preload {
 
 .shortstop {
   grid-area: shortstop;
-  &:hover {
-    background-image: url('/assets/design/shortstop/shortstop-hover.gif');
+  @media only screen and (min-width: 768px) {
+    &:hover {
+      background-image: url('/assets/design/shortstop/shortstop-hover.gif');
+    }
   }
 }
 
 .sloth {
   grid-area: sloth;
-  &:hover {
-    background-image: url('/assets/design/sloth/sloth-hover.svg');
+  @media only screen and (min-width: 768px) {
+    &:hover {
+      background-image: url('/assets/design/sloth/sloth-hover.svg');
+    }
   }
 }
 
 .island {
   grid-area: island;
   border-right: none !important;
-  &:hover {
-    background-image: url('/assets/design/island/island-hover.jpg');
+  @media only screen and (min-width: 768px) {
+    &:hover {
+      background-image: url('/assets/design/island/island-hover.jpg');
+    }
   }
 }
 
 .verde {
   grid-area: verde;
-  &:hover {
-    background-image: url('/assets/design/verde/verde-hover.jpg');
+  @media only screen and (min-width: 768px) {
+    &:hover {
+      background-image: url('/assets/design/verde/verde-hover.jpg');
+    }
   }
   // @media only screen and (max-width: 768px) {
   //   background-image: url('/assets/design/verde/verde-hover.jpg');
@@ -49,48 +57,68 @@ div#preload {
 
 .nb {
   grid-area: nb;
-  &:hover {
-    background-image: url('/assets/design/nb/nb-hover.jpg');
+  @media only screen and (min-width: 768px) {
+    &:hover {
+      background-image: url('/assets/design/nb/nb-hover.jpg');
+    }
   }
 }
 
 .siff {
   grid-area: siff;
   border-right: none;
-  &:hover {
-    background-image: url('/assets/design/siff/siff-hover.jpg');
+  @media only screen and (min-width: 768px) {
+    &:hover {
+      background-image: url('/assets/design/siff/siff-hover.jpg');
+    }
   }
 }
 
 .tsa {
   grid-area: tsa;
   border-right: none !important;
-  &:hover {
-    background-image: url('/assets/design/tsa/tsa-hover.jpg');
+  @media only screen and (min-width: 768px) {
+    &:hover {
+      background-image: url('/assets/design/tsa/tsa-hover.jpg');
+    }
   }
 }
 
 .motif {
   grid-area: motif;
   border-right: none;
-  &:hover {
-    background-image: url('/assets/design/motif/motif-hover.jpg');
+  @media only screen and (min-width: 768px) {
+    &:hover {
+      background-image: url('/assets/design/motif/motif-hover.jpg');
+    }
   }
 }
 
 @media only screen and (max-width: 768px) {
   .design-container {
-    grid-template-columns: 100vw;
-    grid-template-rows: 10vh repeat(8, 40vh);
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: 10vh repeat(4, 25vh);
     grid-template-areas:
-      'nav'
-      'shortstop'
-      'siff'
-      'verde'
-      'tsa'
-      'nb'
-      'sloth'
-      'motif'
-      'island';
+      'nav nav'
+      'shortstop siff'
+      'verde tsa'
+      'nb sloth'
+      'motif island';
   }
 }
+// @media only screen and (max-width: 768px) {
+//   .design-container {
+//     grid-template-columns: 100vw;
+//     grid-template-rows: 10vh repeat(8, 40vh);
+//     grid-template-areas:
+//       'nav'
+//       'shortstop'
+//       'siff'
+//       'verde'
+//       'tsa'
+//       'nb'
+//       'sloth'
+//       'motif'
+//       'island';
+//   }
+// }
