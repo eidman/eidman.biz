@@ -32,19 +32,20 @@
   grid-area: what;
   display: flex;
   flex-direction: column;
-  // justify-content: space-between;
 
   border-top: $grey-border;
   padding: 11%;
   p {
-    line-height: 1.2em;
+    line-height: 1.4em;
     margin-bottom: 2em;
   }
+  @media only screen and (max-width: 768px) {
+    p {
+      margin-bottom: 1.75em;
+    }
+    padding: 10% 25% 0px 10%;
+  }
 }
-
-// .me {
-//   margin-bottom: 30px;
-// }
 
 @media only screen and (max-width: 768px) {
   .about-container {
@@ -56,9 +57,3 @@
       'what';
   }
 }
-//   // .clock-container,
-//   // .clock,
-//   // .wrap
-//   //   visibility: hidden;
-//   //
-// }

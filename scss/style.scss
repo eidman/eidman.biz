@@ -107,7 +107,9 @@ a {
 
 .painting {
   grid-area: painting;
-  border-right: $grey-border;
+  @media only screen and (min-width: 769px) {
+    border-right: $grey-border;
+  }
 }
 
 .clock-container {
