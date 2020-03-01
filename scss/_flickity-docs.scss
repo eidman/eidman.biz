@@ -1,16 +1,16 @@
-// !!!!!!!!! Hidden Button Areas !!!!!!!!!! //
+// !!!!!!!!! hidden button divs !!!!!!!!!! //
 
 .big-button {
-  z-index: 100;
+  z-index: 200;
   position: absolute;
   top: 15vh;
   height: 75vh;
-  width: 30vw;
+  width: 40vw;
   &:hover {
     cursor: pointer;
   }
   @media screen and (max-width: 768px) {
-    display: none;
+    width: 45vw;
   }
 }
 
@@ -22,7 +22,7 @@
   left: 0;
 }
 
-// !!!!!!!!! Prev + Next Buttons !!!!!!!!!! //
+// !!!!!!!!! prev / next buttons !!!!!!!!!! //
 
 .flickity-prev-next-button {
   z-index: 500;
@@ -39,11 +39,10 @@
 }
 
 .flickity-prev-next-button:hover {
-  /* fill: black; */
   opacity: 0.25;
 }
 
-// !!!!!!!!! Carousel !!!!!!!!!! //
+// !!!!!!!!! carousel !!!!!!!!!! //
 
 .carousel-container {
   margin-top: 7vh;

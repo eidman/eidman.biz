@@ -1,6 +1,6 @@
 @import 'variables', 'mixins';
 
-// !!!!!!!!! Photo Project Grid !!!!!!!!!! //
+// !!!!!!!!! photo project grid !!!!!!!!!! //
 
 .photo-container {
   display: grid;
@@ -37,7 +37,7 @@
   }
 }
 
-// !!!!!!!!! Photo Projects !!!!!!!!!! //
+// !!!!!!!!! photo projects !!!!!!!!!! //
 
 .mexico {
   grid-area: mexico;
@@ -106,18 +106,3 @@
     }
   }
 }
-
-// .engima {
-//   grid-area: enigma;
-//   &:hover {
-//     background-image: url('/assets/tk.jpg');
-//   }
-// }
-
-// .architecture {
-//   grid-area: arch;
-//   border-right: none !important;
-//   &:hover {
-//     background-image: url('/assets/photo/arch/arch-hover.jpg');
-//   }
-// }

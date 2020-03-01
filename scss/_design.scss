@@ -1,11 +1,11 @@
 @import 'variables', 'mixins';
-// !!!!!!!!! Hover Image Preload !!!!!!!!!! //
+// !!!!!!!!! hover image preload !!!!!!!!!! //
 
 div#preload {
   display: none;
 }
 
-// !!!!!!!!! Design Project Grid !!!!!!!!!! //
+// !!!!!!!!! design project grid !!!!!!!!!! //
 
 .design-container {
   overflow: hidden;
@@ -44,7 +44,7 @@ div#preload {
   }
 }
 
-// !!!!!!!!! Design Projects !!!!!!!!!! //
+// !!!!!!!!! design projects !!!!!!!!!! //
 
 .shortstop {
   grid-area: shortstop;

@@ -1,12 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
   var carousel = document.querySelector('.carousel');
+  var carouselCounter = document.querySelector('.carousel-counter');
   var flkty = new Flickity(carousel, {
-    // options
     wrapAround: true,
     pageDots: false,
     imagesLoaded: true,
-    // selectedAttraction: 0.03,
-    // friction: 0.35,
     arrowShape: {
       x0: 10,
       x1: 60,
@@ -17,16 +15,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
-  var carouselCounter = document.querySelector('.carousel-counter');
-
-  function updateStatus() {
-    var slideNumber = flkty.selectedIndex + 1;
-    carouselCounter.textContent = slideNumber + '/' + flkty.slides.length;
-  }
-  updateStatus();
-
-  flkty.on('select', updateStatus);
-
   var previousSlide = document.querySelector('.previous-big-button');
   var nextSlide = document.querySelector('.next-big-button');
 
@@ -36,28 +24,12 @@ document.addEventListener('DOMContentLoaded', function() {
   nextSlide.addEventListener('click', function() {
     flkty.next();
   });
+
+  function updateStatus() {
+    var slideNumber = flkty.selectedIndex + 1;
+    carouselCounter.textContent = slideNumber + '/' + flkty.slides.length;
+  }
+  updateStatus();
+
+  flkty.on('select', updateStatus);
 });
-
-// // ADVANCE SLIDE ON CLICK
-// var $carousel = $('.carousel').flickity({
-//   initialIndex: 1
-// });
-// var flick = $carousel.data('flickity');
-
-// $carousel.on('staticClick.flickity', function (
-//   event,
-//   pointer,
-//   cellElement,
-//   cellIndex
-// ) {
-//   // dismiss if cell was not clicked
-//   if (!cellElement) {
-//     return;
-//   }
-//   // go to next if current cell selected
-//   if (cellIndex == flick.selectedIndex) {
-//     $carousel.flickity('next');
-//   } else {
-//     $carousel.flickity('select', cellIndex);
-//   }
-// });
