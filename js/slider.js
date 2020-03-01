@@ -2,9 +2,10 @@ document.addEventListener('DOMContentLoaded', function() {
   var carousel = document.querySelector('.carousel');
   var carouselCounter = document.querySelector('.carousel-counter');
   var flkty = new Flickity(carousel, {
+    imagesLoaded: true,
+    initialIndex: 0,
     wrapAround: true,
     pageDots: false,
-    imagesLoaded: true,
     arrowShape: {
       x0: 10,
       x1: 60,
