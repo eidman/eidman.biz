@@ -10,13 +10,21 @@
     cursor: pointer;
   }
   @media screen and (max-width: 768px) {
-    width: 45vw;
+    display: none;
   }
 }
 
 .next-big-button {
   right: 0;
 }
+
+// .next-big-button {
+//   right: 0;
+//   @media screen and (max-width: 768px) {
+//     width: 20vw;
+//     right: 40vw;
+//   }
+// }
 
 .previous-big-button {
   left: 0;
