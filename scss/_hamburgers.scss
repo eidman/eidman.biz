@@ -18,6 +18,9 @@ $hamburger-layer-spacing: 6px !default;
 $hamburger-layer-color: $grey !default;
 $hamburger-layer-border-radius: 0px !default;
 $hamburger-hover-opacity: 0.25 !default;
+@media screen and (max-width: 768px) {
+  $hamburger-hover-opacity: 1 !important;
+}
 $hamburger-active-layer-color: #fff !default;
 $hamburger-active-hover-opacity: $hamburger-hover-opacity !default;
 
