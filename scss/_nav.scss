@@ -148,7 +148,7 @@
     'menu-design menu-photo menu-painting';
   @media only screen and (max-width: 768px) {
     grid-template-columns: 100vw;
-    grid-template-rows: 10vh repeat(4, 22.5vh);
+    grid-template-rows: 10vh repeat(4, calc(var(--vh, 1vh) * 22.5));
     grid-template-areas:
       'nav'
       'menu-design'
