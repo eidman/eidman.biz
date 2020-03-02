@@ -6,9 +6,5 @@ document.addEventListener('DOMContentLoaded', function() {
   hamburger.addEventListener('click', function() {
     hamburger.classList.toggle('is-active');
     navMenu.classList.toggle('show');
-
-    // document.body.style.position = '';
-    // document.body.style.top = '';
-    // window.scrollTo(0, parseInt(scrollY || '0') * -1);
   });
 });
