@@ -32,6 +32,14 @@
   }
 }
 
+.green-button > .a {
+  fill: $grey;
+}
+
+.green-button > .b {
+  stroke: $grey;
+}
+
 // !!!!!!!!! slide counter !!!!!!!!!! //
 
 .counter-container {
@@ -93,7 +101,6 @@
   }
 }
 
-.project-cred,
 .project-description {
   margin-bottom: 1em;
 }
