@@ -101,8 +101,6 @@
 
 .celestine {
   grid-area: celestine;
-  border-bottom: $grey-border;
-  margin-bottom: -2px;
   @media only screen and (min-width: 768px) {
     &:hover {
       background-image: url('/assets/photo/celestine/celestine-hover.jpg');
@@ -112,8 +110,6 @@
 
 .nb {
   grid-area: nb;
-  border-bottom: $grey-border;
-  margin-bottom: -2px;
   @media only screen and (min-width: 768px) {
     &:hover {
       background-image: url('/assets/photo/nb/nb-hover.jpg');
@@ -123,8 +119,6 @@
 
 .goop {
   grid-area: goop;
-  border-bottom: $grey-border;
-  margin-bottom: -2px;
   @media only screen and (min-width: 768px) {
     &:hover {
       background-image: url('/assets/photo/goop/goop-hover.jpg');
