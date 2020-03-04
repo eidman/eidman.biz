@@ -8,8 +8,8 @@
   grid-template-rows: 8.5vh repeat(2, 45.75vh);
   grid-template-areas:
     'nav nav nav nav'
-    'moving goop mexico nb'
-    'steve catskills celestine portraits';
+    'goop mexico nb moving'
+    'portraits steve celestine catskills';
   justify-content: center;
   @media only screen and (max-width: 1068px) {
     grid-template-columns: 50vw 50vw;
@@ -27,14 +27,14 @@
     grid-template-rows: 10vh repeat(7, 30vh);
     grid-template-areas:
       'nav'
-      'moving'
-      'portraits'
       'nb'
       'goop'
+      'moving'
+      'portraits'
+      'mexico'
       'catskills'
       'steve'
-      'mexico'
-      'bayside'
+      // 'bayside'
       'celestine';
   }
 }
@@ -61,10 +61,11 @@
 
 .moving-day {
   grid-area: moving;
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 1068px) {
     &:hover {
       background-image: url('/assets/photo/moving-day/moving-day-hover.jpg');
     }
+    border-right: none !important;
   }
 }
 
@@ -83,6 +84,7 @@
     &:hover {
       background-image: url('/assets/photo/catskills/catskills-hover.jpg');
     }
+    border-right: none !important;
   }
 }
 
@@ -92,7 +94,6 @@
     &:hover {
       background-image: url('/assets/photo/portraits/portraits-hover.jpg');
     }
-    border-right: none !important;
     border-bottom: $grey-border;
     margin-bottom: -2px;
   }
