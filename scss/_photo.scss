@@ -9,7 +9,7 @@
   grid-template-areas:
     'nav nav nav nav'
     'goop mexico nb moving'
-    'portraits steve celestine catskills';
+    'enigma portraits steve celestine';
   justify-content: center;
   @media only screen and (max-width: 1068px) {
     grid-template-columns: 50vw 50vw;
@@ -19,12 +19,12 @@
       'moving nb'
       'goop steve'
       'mexico portraits'
-      'celestine catskills';
+      'celestine enigma';
   }
 
   @media only screen and (max-width: 768px) {
     grid-template-columns: 98vw;
-    grid-template-rows: 10vh repeat(7, 30vh);
+    grid-template-rows: 10vh repeat(8, 30vh);
     grid-template-areas:
       'nav'
       'nb'
@@ -32,9 +32,10 @@
       'moving'
       'portraits'
       'mexico'
-      'catskills'
+      'enigma'
       'steve'
       // 'bayside'
+      // 'catskills'
       'celestine';
   }
 }
@@ -122,6 +123,15 @@
   @media only screen and (min-width: 768px) {
     &:hover {
       background-image: url('/assets/photo/goop/goop-hover.jpg');
+    }
+  }
+}
+
+.enigma {
+  grid-area: enigma;
+  @media only screen and (min-width: 768px) {
+    &:hover {
+      background-image: url('/assets/photo/enigma/enigma-hover.jpg');
     }
   }
 }
