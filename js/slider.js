@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initialIndex: 0,
     wrapAround: true,
     pageDots: false,
+    draggable: false,
     arrowShape: {
       x0: 10,
       x1: 60,
