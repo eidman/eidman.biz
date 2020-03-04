@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', function() {
     initialIndex: 0,
     wrapAround: true,
     pageDots: false,
-    draggable: false,
     arrowShape: {
       x0: 10,
       x1: 60,
@@ -23,8 +22,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
   if (matchMedia('screen and (max-width: 768px)').matches) {
     var flkty = new Flickity(carousel, {
-      selectedAttraction: 0.3,
-      friction: 1
+      // selectedAttraction: 0.3,
+      // friction: 1
+      draggable: false
     });
   }
 
