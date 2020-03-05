@@ -34,21 +34,36 @@
   width: 50px !important;
   height: 50px !important;
   background: transparent !important;
+  // @media screen and (max-width: 768px) {
+  //   display: none;
+  // }
   @media screen and (max-width: 768px) {
-    display: none;
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 0px !important;
+    // border: 2px solid #11a748 !important;
+    // background-color: #fff !important;
+    // opacity: 0.4;
   }
+}
 
-  //  @media screen and (max-width: 768px) {
-  //   width: 20px !important;
-  //   height: 20px !important;
-  //   // border-radius: 0px !important;
-  //   border: 2px solid #11a748 !important;
-  //   background-color: transparent !important;
-  //   // opacity: 0.5;
+.flickity-prev-next-button.previous {
+  @media screen and (max-width: 768px) {
+    left: 0px !important;
+  }
+}
+
+.flickity-prev-next-button.next {
+  @media screen and (max-width: 768px) {
+    right: 0px !important;
+  }
 }
 
 .flickity-prev-next-button .arrow {
   fill: #11a748;
+  // @media screen and (max-width: 768px) {
+  //   fill: transparent !important;
+  // }
 }
 
 .flickity-prev-next-button:hover {
