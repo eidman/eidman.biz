@@ -144,6 +144,13 @@ body.fixed {
   }
 }
 
+.hamburger.is-active {
+  @media only screen and (max-width: 768px) {
+    position: absolute;
+    right: 20px;
+  }
+}
+
 // !!!!!!!!! nav menu grid !!!!!!!!!! //
 
 .nav-menu-container {
