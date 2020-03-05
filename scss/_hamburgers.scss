@@ -18,9 +18,6 @@ $hamburger-layer-spacing: 6px !default;
 $hamburger-layer-color: $grey !default;
 $hamburger-layer-border-radius: 0px !default;
 $hamburger-hover-opacity: 0.25 !default;
-@media screen and (max-width: 768px) {
-  $hamburger-hover-opacity: 1 !important;
-}
 $hamburger-active-layer-color: #fff !default;
 $hamburger-active-hover-opacity: $hamburger-hover-opacity !default;
 
@@ -28,7 +25,7 @@ $hamburger-active-hover-opacity: $hamburger-hover-opacity !default;
 // set $hamburger-hover-use-filter as true and
 // change the value of $hamburger-hover-filter accordingly.
 $hamburger-hover-use-filter: false !default;
-$hamburger-hover-filter: opacity(50%) !default;
+$hamburger-hover-filter: opacity(100%) !default;
 $hamburger-active-hover-filter: $hamburger-hover-filter !default;
 
 // Types (Remove or comment out what you don’t need)

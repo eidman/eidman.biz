@@ -138,6 +138,9 @@ body.fixed {
     position: absolute;
     right: 20px;
     position: fixed;
+    &:hover {
+      opacity: 1 !important;
+    }
   }
 }
 
