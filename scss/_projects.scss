@@ -4,6 +4,9 @@
 
 .project-page-container {
   margin: 20px;
+  @media screen and (max-width: 768px) {
+    margin: 30px 15px 0 15px;
+  }
 }
 
 // !!!!!!!!! buttons !!!!!!!!!! //
@@ -20,17 +23,15 @@
     }
   }
   @media screen and (max-width: 768px) {
-    position: fixed;
-
-    // top: 15px;
-    // right: 15px;
+    top: 15px;
+    right: 15px;
   }
 }
 
 .info-button {
   right: 68px;
   @media screen and (max-width: 768px) {
-    right: 65px;
+    right: 60px;
   }
 }
 
@@ -71,6 +72,7 @@
   background-color: $grey;
   opacity: 1;
   z-index: 1000;
+  overflow-x: hidden;
   overflow-y: hidden;
 }
 
