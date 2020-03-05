@@ -1,3 +1,15 @@
+.carousel:after {
+  content: 'flickity';
+  display: none;
+}
+
+@media screen and (max-width: 769px) {
+  /* disable Flickity for large devices */
+  .carousel:after {
+    content: '';
+  }
+}
+
 // !!!!!!!!! hidden button divs !!!!!!!!!! //
 
 .big-button {
@@ -9,19 +21,14 @@
   &:hover {
     cursor: pointer;
   }
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 
 .next-big-button {
   right: 0;
 }
-
-// .next-big-button {
-//   right: 0;
-//   @media screen and (max-width: 768px) {
-//     width: 20vw;
-//     right: 40vw;
-//   }
-// }
 
 .previous-big-button {
   left: 0;
@@ -34,36 +41,30 @@
   width: 50px !important;
   height: 50px !important;
   background: transparent !important;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
   // @media screen and (max-width: 768px) {
-  //   display: none;
+  //   width: 50px !important;
+  //   height: 50px !important;
+  //   border-radius: 0px !important;
   // }
-  @media screen and (max-width: 768px) {
-    width: 50px !important;
-    height: 50px !important;
-    border-radius: 0px !important;
-    // border: 2px solid #11a748 !important;
-    // background-color: #fff !important;
-    // opacity: 0.4;
-  }
 }
 
-.flickity-prev-next-button.previous {
-  @media screen and (max-width: 768px) {
-    left: 0px !important;
-  }
-}
+// .flickity-prev-next-button.previous {
+//   @media screen and (max-width: 768px) {
+//     left: 0px !important;
+//   }
+// }
 
-.flickity-prev-next-button.next {
-  @media screen and (max-width: 768px) {
-    right: 0px !important;
-  }
-}
+// .flickity-prev-next-button.next {
+//   @media screen and (max-width: 768px) {
+//     right: 0px !important;
+//   }
+// }
 
 .flickity-prev-next-button .arrow {
   fill: #11a748;
-  // @media screen and (max-width: 768px) {
-  //   fill: transparent !important;
-  // }
 }
 
 .flickity-prev-next-button:hover {
@@ -71,7 +72,6 @@
 }
 
 // !!!!!!!!! carousel !!!!!!!!!! //
-
 .carousel-container {
   margin-top: 7vh;
 }
@@ -83,6 +83,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  @media screen and (max-width: 768px) {
+    height: auto;
+  }
 }
 
 .carousel.is-fullscreen .carousel-cell {
@@ -96,15 +99,18 @@
   height: auto;
   width: auto;
   margin: 0 auto;
+  @media screen and (max-width: 768px) {
+    margin-bottom: 5%;
+  }
 }
 
 .carousel.is-fullscreen .carousel-cell-image {
   max-width: 100%;
 }
 
-.carousel-cell-image.image-border {
-  border: 2px solid rgb(215, 215, 215);
-  @media screen and (max-width: 768px) {
-    border: 1px solid rgb(215, 215, 215);
-  }
-}
+// .carousel-cell-image.image-border {
+//   border: 2px solid rgb(215, 215, 215);
+//   @media screen and (max-width: 768px) {
+//     border: 1px solid rgb(215, 215, 215);
+//   }
+// }
