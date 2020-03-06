@@ -46,24 +46,6 @@ div#preload {
 
 // !!!!!!!!! design projects !!!!!!!!!! //
 
-.shortstop {
-  grid-area: shortstop;
-  @media only screen and (min-width: 768px) {
-    &:hover {
-      background-image: url('/assets/design/shortstop/shortstop-hover.gif');
-    }
-  }
-}
-
-.sloth {
-  grid-area: sloth;
-  @media only screen and (min-width: 768px) {
-    &:hover {
-      background-image: url('/assets/design/sloth/sloth-hover.svg');
-    }
-  }
-}
-
 .island {
   grid-area: island;
   border-right: none !important;
@@ -74,11 +56,12 @@ div#preload {
   }
 }
 
-.verde {
-  grid-area: verde;
+.motif {
+  grid-area: motif;
+  border-right: none;
   @media only screen and (min-width: 768px) {
     &:hover {
-      background-image: url('/assets/design/verde/verde-hover.jpg');
+      background-image: url('/assets/design/motif/motif-hover.jpg');
     }
   }
 }
@@ -102,6 +85,24 @@ div#preload {
   }
 }
 
+.shortstop {
+  grid-area: shortstop;
+  @media only screen and (min-width: 768px) {
+    &:hover {
+      background-image: url('/assets/design/shortstop/shortstop-hover.gif');
+    }
+  }
+}
+
+.sloth {
+  grid-area: sloth;
+  @media only screen and (min-width: 768px) {
+    &:hover {
+      background-image: url('/assets/design/sloth/sloth-hover.svg');
+    }
+  }
+}
+
 .tsa {
   grid-area: tsa;
   border-right: none !important;
@@ -112,12 +113,11 @@ div#preload {
   }
 }
 
-.motif {
-  grid-area: motif;
-  border-right: none;
+.verde {
+  grid-area: verde;
   @media only screen and (min-width: 768px) {
     &:hover {
-      background-image: url('/assets/design/motif/motif-hover.jpg');
+      background-image: url('/assets/design/verde/verde-hover.jpg');
     }
   }
 }

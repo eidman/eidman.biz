@@ -1,10 +1,11 @@
+// !!!!!!!!! enable/disable flickity on desktop/mobile !!!!!!!!!! //
+
 .carousel:after {
   content: 'flickity';
   display: none;
 }
 
 @media screen and (max-width: 769px) {
-  /* disable Flickity for large devices */
   .carousel:after {
     content: '';
   }
@@ -44,24 +45,7 @@
   @media screen and (max-width: 768px) {
     display: none;
   }
-  // @media screen and (max-width: 768px) {
-  //   width: 50px !important;
-  //   height: 50px !important;
-  //   border-radius: 0px !important;
-  // }
 }
-
-// .flickity-prev-next-button.previous {
-//   @media screen and (max-width: 768px) {
-//     left: 0px !important;
-//   }
-// }
-
-// .flickity-prev-next-button.next {
-//   @media screen and (max-width: 768px) {
-//     right: 0px !important;
-//   }
-// }
 
 .flickity-prev-next-button .arrow {
   fill: #11a748;
@@ -72,6 +56,7 @@
 }
 
 // !!!!!!!!! carousel !!!!!!!!!! //
+
 .carousel-container {
   margin-top: 7vh;
 }

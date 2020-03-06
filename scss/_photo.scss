@@ -3,72 +3,49 @@
 // !!!!!!!!! photo project grid !!!!!!!!!! //
 
 .photo-container {
+  overflow: hidden;
   display: grid;
   grid-template-columns: repeat(4, calc(100vw / 4));
-  grid-template-rows: 8.5vh repeat(2, 45.75vh);
+  grid-template-rows: 8.5vh repeat(3, 45.75vh);
   grid-template-areas:
     'nav nav nav nav'
-    'goop mexico nb moving'
-    'enigma portraits steve celestine';
+    'goop nb mexico moving'
+    'enigma celestine portraits steve'
+    'sr catskills bayside .';
   justify-content: center;
   @media only screen and (max-width: 1068px) {
     grid-template-columns: 50vw 50vw;
-    grid-template-rows: 10vh repeat(4, 35vh);
+    grid-template-rows: 8.5vh repeat(6, 35vh);
     grid-template-areas:
       'nav nav'
-      'moving nb'
+      'nb moving'
       'goop steve'
-      'mexico portraits'
-      'celestine enigma';
+      'sr portraits'
+      'enigma mexico'
+      'celestine catskills'
+      'bayside .';
   }
 
   @media only screen and (max-width: 768px) {
     grid-template-columns: 98vw;
-    grid-template-rows: 10vh repeat(8, 30vh);
+    grid-template-rows: 10vh repeat(11, 30vh);
     grid-template-areas:
       'nav'
       'nb'
-      'goop'
       'moving'
-      'portraits'
-      'mexico'
+      'goop'
       'enigma'
+      'portraits'
+      'sr'
+      'celestine'
+      'mexico'
       'steve'
-      // 'bayside'
-      // 'catskills'
-      'celestine';
+      'bayside'
+      'catskills';
   }
 }
 
 // !!!!!!!!! photo projects !!!!!!!!!! //
-
-.mexico {
-  grid-area: mexico;
-  @media only screen and (min-width: 768px) {
-    &:hover {
-      background-image: url('/assets/photo/mexico/mexico-hover.jpg');
-    }
-  }
-}
-
-.steve {
-  grid-area: steve;
-  @media only screen and (min-width: 768px) {
-    &:hover {
-      background-image: url('/assets/photo/steve/steve-hover.jpg');
-    }
-  }
-}
-
-.moving-day {
-  grid-area: moving;
-  @media only screen and (min-width: 1068px) {
-    &:hover {
-      background-image: url('/assets/photo/moving-day/moving-day-hover.jpg');
-    }
-    border-right: none !important;
-  }
-}
 
 .bayside {
   grid-area: bayside;
@@ -85,18 +62,6 @@
     &:hover {
       background-image: url('/assets/photo/catskills/catskills-hover.jpg');
     }
-    border-right: none !important;
-  }
-}
-
-.portraits {
-  grid-area: portraits;
-  @media only screen and (min-width: 768px) {
-    &:hover {
-      background-image: url('/assets/photo/portraits/portraits-hover.jpg');
-    }
-    border-bottom: $grey-border;
-    margin-bottom: -2px;
   }
 }
 
@@ -106,6 +71,34 @@
     &:hover {
       background-image: url('/assets/photo/celestine/celestine-hover.jpg');
     }
+  }
+}
+
+.enigma {
+  grid-area: enigma;
+  @media only screen and (min-width: 768px) {
+    &:hover {
+      background-image: url('/assets/photo/enigma/enigma-hover.jpg');
+    }
+  }
+}
+
+.mexico {
+  grid-area: mexico;
+  @media only screen and (min-width: 768px) {
+    &:hover {
+      background-image: url('/assets/photo/mexico/mexico-hover.jpg');
+    }
+  }
+}
+
+.moving-day {
+  grid-area: moving;
+  @media only screen and (min-width: 1068px) {
+    &:hover {
+      background-image: url('/assets/photo/moving-day/moving-day-hover.jpg');
+    }
+    border-right: none !important;
   }
 }
 
@@ -127,11 +120,34 @@
   }
 }
 
-.enigma {
-  grid-area: enigma;
+.portraits {
+  grid-area: portraits;
   @media only screen and (min-width: 768px) {
     &:hover {
-      background-image: url('/assets/photo/enigma/enigma-hover.jpg');
+      background-image: url('/assets/photo/portraits/portraits-hover.jpg');
     }
+    border-bottom: $grey-border;
+    margin-bottom: -2px;
+  }
+}
+
+.sr {
+  grid-area: sr;
+  @media only screen and (min-width: 768px) {
+    &:hover {
+      background-image: url('/assets/photo/sr/sr-hover.jpg');
+    }
+  }
+}
+
+.steve {
+  grid-area: steve;
+  @media only screen and (min-width: 768px) {
+    &:hover {
+      background-image: url('/assets/photo/steve/steve-hover.jpg');
+    }
+    border-right: none !important;
+    border-bottom: $grey-border;
+    margin-bottom: -2px;
   }
 }

@@ -4,9 +4,9 @@
 
 .project-page-container {
   margin: 20px;
+  overflow: hidden;
   @media screen and (max-width: 768px) {
     margin: 40px 15px 0 15px;
-    overflow: hidden;
   }
 }
 

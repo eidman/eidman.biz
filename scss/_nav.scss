@@ -8,10 +8,9 @@ body.fixed {
 
 .nav-container {
   grid-area: nav;
-  @include flexCenter();
-  justify-content: space-between;
-  margin: 0px 20px;
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1068px) {
+    @include flexCenter();
+    justify-content: space-between;
     margin: 0px 15px;
   }
 }
@@ -19,8 +18,13 @@ body.fixed {
 // !!!!!!!!! Aaron Eidman !!!!!!!!!! //
 
 .logo {
-  &:hover {
-    @include opacity();
+  @media only screen and (min-width: 769px) {
+    position: fixed;
+    top: 2.8vh;
+    left: 15px;
+    &:hover {
+      @include opacity();
+    }
   }
 }
 
@@ -28,17 +32,23 @@ body.fixed {
 
 .about {
   z-index: 2000;
+  margin: 0 auto;
+  @include flexCenter();
 }
 
 .bonsai {
-  width: 22%;
-  margin-left: 20%;
-  margin-top: 5%;
+  width: 3.8%;
+  position: fixed;
+  margin-top: 5vh;
   &:hover {
     -moz-animation: spinoffPulse 1s infinite linear;
     -webkit-animation: spinoffPulse 1s infinite linear;
   }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1068px) {
+    width: 4.2%;
+    margin-top: 0.5vh;
+  }
+  @media only screen and (max-width: 868px) {
     display: none;
   }
 
@@ -111,11 +121,9 @@ body.fixed {
 // !!!!!!!!! nav menu show / hide !!!!!!!!!! //
 .nav-menu-container {
   position: absolute;
-  overflow: hidden;
   top: 0;
   z-index: -1;
   height: 100vh;
-  max-height: 100vh;
   width: 100vw;
   background-color: $grey;
   opacity: 0;
@@ -125,15 +133,16 @@ body.fixed {
   opacity: 1;
   z-index: 1000;
   position: fixed;
-  overflow-y: hidden;
 }
 
 .hamburger {
   z-index: 2000;
-  margin-top: 0.5% !important;
+  position: fixed;
+  right: 15px;
+  top: 3vh;
   @media only screen and (max-width: 768px) {
     position: absolute;
-    right: 15px;
+    top: 25px;
     position: fixed;
     &:hover {
       opacity: 1 !important;
@@ -149,8 +158,14 @@ body.fixed {
 }
 
 // !!!!!!!!! nav menu grid !!!!!!!!!! //
+.menu-about {
+  @media only screen and (min-width: 769px) {
+    display: none;
+  }
+}
 
 .nav-menu-container {
+  max-width: 100%;
   display: grid;
   grid-template-columns: repeat(3, calc(100vw / 3));
   grid-template-rows: 8.5vh 91.5vh;
