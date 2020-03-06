@@ -1,17 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
-  window.addEventListener('load', function() {
-    flkty.resize();
-  });
-
   var carousel = document.querySelector('.carousel');
   var carouselCounter = document.querySelector('.carousel-counter');
   var flkty = new Flickity(carousel, {
     imagesLoaded: true,
-    initialIndex: 0,
+    // initialIndex: 0,
     wrapAround: true,
     pageDots: false,
-    // fullScreen: true,
-    lazyLoad: false,
     watchCSS: true,
     arrowShape: {
       x0: 10,
