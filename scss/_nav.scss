@@ -37,9 +37,9 @@ body.fixed {
 }
 
 .bonsai {
-  width: 3.8%;
+  width: 3.5%;
   position: fixed;
-  margin-top: 5vh;
+  margin-top: 4.8vh;
   &:hover {
     -moz-animation: spinoffPulse 1s infinite linear;
     -webkit-animation: spinoffPulse 1s infinite linear;
@@ -139,7 +139,7 @@ body.fixed {
   z-index: 2000;
   position: fixed;
   right: 15px;
-  top: 3vh;
+  top: 3.2vh;
   @media only screen and (max-width: 768px) {
     position: absolute;
     top: 25px;
