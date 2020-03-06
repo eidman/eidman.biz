@@ -18,7 +18,7 @@ body.fixed {
 // !!!!!!!!! Aaron Eidman !!!!!!!!!! //
 
 .logo {
-  @media only screen and (min-width: 769px) {
+  @media only screen and (min-width: 1069px) {
     position: fixed;
     top: 2.5vh;
     left: 15px;
@@ -46,10 +46,11 @@ body.fixed {
     -webkit-animation: spinoffPulse 1s infinite linear;
   }
   @media only screen and (max-width: 1068px) {
-    width: 4.2%;
+    width: 4.4%;
     margin-top: 0.5vh;
+    margin-left: -5vw;
   }
-  @media only screen and (max-width: 868px) {
+  @media only screen and (max-width: 1023px) {
     display: none;
   }
 
@@ -141,9 +142,9 @@ body.fixed {
   position: fixed;
   right: 15px;
   top: 3.2vh;
-  @media only screen and (max-width: 768px) {
+
+  @media only screen and (max-width: 1068px) {
     position: absolute;
-    top: 25px;
     position: fixed;
     &:hover {
       opacity: 1 !important;
@@ -210,6 +211,9 @@ body.fixed {
 }
 .menu-about {
   grid-area: menu-about;
+  // p {
+  //   color: black;
+  // }
 }
 
 .menu-design {

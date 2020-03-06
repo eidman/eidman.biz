@@ -18,7 +18,7 @@
   position: absolute;
   top: 15vh;
   height: 75vh;
-  width: 45vw;
+  width: 50vw;
   &:hover {
     cursor: pointer;
   }
@@ -42,7 +42,7 @@
   width: 50px !important;
   height: 50px !important;
   background: transparent !important;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1068px) {
     display: none;
   }
 }
@@ -52,7 +52,9 @@
 }
 
 .flickity-prev-next-button:hover {
-  opacity: 0.25;
+  @media screen and (min-width: 1069px) {
+    opacity: 0.25;
+  }
 }
 
 // !!!!!!!!! carousel !!!!!!!!!! //

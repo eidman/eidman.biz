@@ -57,10 +57,21 @@ a {
     'nav nav'
     'design photo'
     'painting clock';
+
+  // @media (min-height: 1300px) and (min-width: 1024px) {
+  //   display: grid;
+  //   grid-template-columns: 100vw;
+  //   grid-template-rows: 7vh repeat(3, 31.5vh);
+  //   grid-template-areas:
+  //     'nav'
+  //     'design'
+  //     'photo'
+  //     'painting';
+  // }
   @media only screen and (max-width: 768px) {
     display: grid;
     grid-template-columns: 100vw;
-    grid-template-rows: 10vh repeat(3, 30vh);
+    grid-template-rows: 8.5vh repeat(3, 30.5vh);
     grid-template-areas:
       'nav'
       'design'

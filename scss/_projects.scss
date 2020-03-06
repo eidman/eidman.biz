@@ -80,7 +80,7 @@
 
 .project-info {
   height: 100vh;
-  padding: 2em 50% 0 2em;
+  padding: 20px 50% 0 20px;
   display: flex;
   color: #fff;
   a {
@@ -90,9 +90,13 @@
       color: $grey;
     }
   }
+  @media screen and (max-width: 1068px) {
+    padding: 20px 28% 0 20px;
+  }
+
   @media screen and (max-width: 768px) {
     flex-direction: column;
-    padding: 1.5em 36% 0 1.5em;
+    padding: 15px 36% 0 15px;
     a {
       border-bottom: 1px solid #fff;
     }
@@ -104,6 +108,10 @@
   line-height: 1.4em;
   width: 55%;
   margin-right: 4em;
+  @media screen and (max-width: 1068px) {
+    font-size: 1rem;
+    line-height: 1.3em;
+  }
   @media screen and (max-width: 768px) {
     width: 100%;
     font-size: 1rem;
@@ -113,4 +121,13 @@
 
 .project-description {
   margin-bottom: 1em;
+}
+
+.project-description,
+.project-description a,
+.project-cred {
+  @media screen and (max-width: 1068px) {
+    font-size: 1.4rem;
+    line-height: 1.3em;
+  }
 }

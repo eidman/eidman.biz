@@ -27,8 +27,8 @@
   }
 
   @media only screen and (max-width: 768px) {
-    grid-template-columns: 98vw;
-    grid-template-rows: 10vh repeat(11, 30vh);
+    grid-template-columns: 100vw;
+    grid-template-rows: 8.5vh repeat(11, 30vh);
     grid-template-areas:
       'nav'
       'nb'
