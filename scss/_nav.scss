@@ -20,7 +20,7 @@ body.fixed {
 .logo {
   @media only screen and (min-width: 769px) {
     position: fixed;
-    top: 2.58vh;
+    top: 2.5vh;
     left: 15px;
     &:hover {
       @include opacity();
