@@ -38,6 +38,7 @@ body.fixed {
 
 .bonsai {
   width: 3.5%;
+  z-index: 5000;
   position: fixed;
   margin-top: 4.8vh;
   &:hover {
