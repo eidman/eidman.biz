@@ -16,15 +16,16 @@
   justify-content: center;
   @media only screen and (max-width: 1068px) {
     grid-template-columns: 50vw 50vw;
-    grid-template-rows: 8.5vh repeat(6, 30vh);
+    grid-template-rows: 8.5vh 8.5vh repeat(6, 30vh);
     grid-template-areas:
       'nav nav'
+      'commercial personal'
       'nb moving'
       'goop steve'
       'sr portraits'
       'enigma mexico'
       'celestine catskills'
-      'bayside .';
+      '. bayside';
   }
 
   @media only screen and (max-width: 768px) {
@@ -62,12 +63,22 @@
       border: none !important;
     }
   }
+  @media only screen and (max-width: 768px) {
+    .box-title {
+      display: none;
+    }
+    display: none;
+  }
 }
 
 // !!!!!!!!! photo projects !!!!!!!!!! //
 
 .bayside {
   grid-area: bayside;
+  @media only screen and (max-width: 1068px) {
+    border-left: $grey-border;
+    margin-left: -2px;
+  }
   @media only screen and (min-width: 768px) {
     &:hover {
       background-image: url('/assets/photo/bayside/bayside-hover.jpg');
@@ -84,11 +95,6 @@
   }
   border-left: $grey-border;
   margin-left: -2px;
-
-  @media only screen and (max-width: 1068px) {
-    border-bottom: $grey-border;
-    margin-bottom: -2px;
-  }
 }
 
 .celestine {
