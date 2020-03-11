@@ -20,7 +20,7 @@ body.fixed {
 .logo {
   @media only screen and (min-width: 1069px) {
     position: fixed;
-    top: 3%;
+    top: 2.8%;
     left: 20px;
     &:hover {
       @include opacity();
@@ -40,7 +40,7 @@ body.fixed {
   width: 3%;
   z-index: 5000;
   position: fixed;
-  margin-top: 4.8vh;
+  margin-top: 4.7vh;
   &:hover {
     -moz-animation: spinoffPulse 1s infinite linear;
     -webkit-animation: spinoffPulse 1s infinite linear;
@@ -140,7 +140,7 @@ body.fixed {
 .hamburger {
   z-index: 2000;
   position: fixed;
-  right: 15px;
+  right: 20px;
   top: 3.2vh;
 
   @media only screen and (max-width: 1068px) {
