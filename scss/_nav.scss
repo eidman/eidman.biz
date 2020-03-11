@@ -20,7 +20,7 @@ body.fixed {
 .logo {
   @media only screen and (min-width: 1069px) {
     position: fixed;
-    top: 2.5vh;
+    top: 3%;
     left: 20px;
     &:hover {
       @include opacity();
@@ -37,7 +37,7 @@ body.fixed {
 }
 
 .bonsai {
-  width: 3.5%;
+  width: 3%;
   z-index: 5000;
   position: fixed;
   margin-top: 4.8vh;
