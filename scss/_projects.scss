@@ -17,8 +17,8 @@
   width: 40px;
   top: 20px;
   right: 20px;
+  cursor: pointer;
   &:hover {
-    cursor: pointer;
     .b {
       @include opacity();
     }
@@ -32,6 +32,7 @@
 
 .info-button {
   right: 68px;
+  cursor: help;
   @media screen and (max-width: 768px) {
     right: 60px;
   }

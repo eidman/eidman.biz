@@ -19,9 +19,6 @@
   top: 15vh;
   height: 75vh;
   width: 50vw;
-  &:hover {
-    cursor: pointer;
-  }
   @media screen and (max-width: 768px) {
     display: none;
   }
@@ -29,33 +26,35 @@
 
 .next-big-button {
   right: 0;
+  cursor: url('/assets/arrow-next.png'), e-resize;
 }
 
 .previous-big-button {
   left: 0;
+  cursor: url('/assets/arrow-prev.png'), w-resize;
 }
 
 // !!!!!!!!! prev / next buttons !!!!!!!!!! //
 
 .flickity-prev-next-button {
-  z-index: 500;
-  width: 50px !important;
-  height: 50px !important;
-  background: transparent !important;
-  @media screen and (max-width: 1068px) {
-    display: none;
-  }
+  // z-index: 500;
+  // width: 50px !important;
+  // height: 50px !important;
+  // background: transparent !important;
+  // @media screen and (max-width: 1068px) {
+  display: none;
+  // }
 }
 
-.flickity-prev-next-button .arrow {
-  fill: #11a748;
-}
+// .flickity-prev-next-button .arrow {
+//   fill: #11a748;
+// }
 
-.flickity-prev-next-button:hover {
-  @media screen and (min-width: 1069px) {
-    opacity: 0.25;
-  }
-}
+// .flickity-prev-next-button:hover {
+//   @media screen and (min-width: 1069px) {
+//     opacity: 0.25;
+//   }
+// }
 
 // !!!!!!!!! carousel !!!!!!!!!! //
 
