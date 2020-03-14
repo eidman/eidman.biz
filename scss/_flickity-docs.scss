@@ -37,24 +37,8 @@
 // !!!!!!!!! prev / next buttons !!!!!!!!!! //
 
 .flickity-prev-next-button {
-  // z-index: 500;
-  // width: 50px !important;
-  // height: 50px !important;
-  // background: transparent !important;
-  // @media screen and (max-width: 1068px) {
   display: none;
-  // }
 }
-
-// .flickity-prev-next-button .arrow {
-//   fill: #11a748;
-// }
-
-// .flickity-prev-next-button:hover {
-//   @media screen and (min-width: 1069px) {
-//     opacity: 0.25;
-//   }
-// }
 
 // !!!!!!!!! carousel !!!!!!!!!! //
 
@@ -65,7 +49,6 @@
 .carousel-cell {
   width: 100%;
   height: 75vh;
-  /* center images in cells with flexbox */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -93,10 +76,3 @@
 .carousel.is-fullscreen .carousel-cell-image {
   max-width: 100%;
 }
-
-// .carousel-cell-image.image-border {
-//   border: 2px solid rgb(215, 215, 215);
-//   @media screen and (max-width: 768px) {
-//     border: 1px solid rgb(215, 215, 215);
-//   }
-// }
