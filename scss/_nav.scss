@@ -160,21 +160,17 @@ body.fixed {
 }
 
 // !!!!!!!!! nav menu grid !!!!!!!!!! //
-.menu-about {
-  @media only screen and (min-width: 769px) {
-    display: none;
-  }
-}
 
 .nav-menu-container {
   overflow: hidden;
   max-width: 100%;
   display: grid;
   grid-template-columns: repeat(3, calc(100vw / 3));
-  grid-template-rows: 8.5vh 91.5vh;
+  grid-template-rows: 8.5vh 74.5vh 17vh;
   grid-template-areas:
     '. . .'
-    'menu-design menu-photo menu-painting';
+    'menu-design menu-photo menu-painting'
+    'menu-about menu-about menu-about';
   @media only screen and (max-width: 768px) {
     grid-template-columns: 100vw;
     grid-template-rows: 10vh repeat(4, calc(var(--vh, 1vh) * 22.5));
@@ -211,9 +207,7 @@ body.fixed {
 }
 .menu-about {
   grid-area: menu-about;
-  // p {
-  //   color: black;
-  // }
+  border-right: none;
 }
 
 .menu-design {
