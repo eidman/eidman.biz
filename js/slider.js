@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     imagesLoaded: true,
     initialIndex: 0,
     draggable: false,
+    fade: true,
     wrapAround: true,
     pageDots: false,
     watchCSS: true,

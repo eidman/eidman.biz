@@ -38,7 +38,7 @@ body.fixed {
 
 .bonsai {
   width: 3%;
-  z-index: 5000;
+  // z-index: 5000;
   position: fixed;
   margin-top: 4.7vh;
   &:hover {
@@ -166,20 +166,20 @@ body.fixed {
   max-width: 100%;
   display: grid;
   grid-template-columns: repeat(3, calc(100vw / 3));
-  grid-template-rows: 8.5vh 74.5vh 17vh;
+  grid-template-rows: 8.5vh 18.3vh 73.2vh;
   grid-template-areas:
     '. . .'
-    'menu-design menu-photo menu-painting'
-    'menu-about menu-about menu-about';
+    'menu-about menu-about menu-about'
+    'menu-design menu-photo menu-painting';
   @media only screen and (max-width: 768px) {
     grid-template-columns: 100vw;
     grid-template-rows: 10vh repeat(4, calc(var(--vh, 1vh) * 22.5));
     grid-template-areas:
       'nav'
+      'menu-about'
       'menu-design'
       'menu-photo'
-      'menu-painting'
-      'menu-about';
+      'menu-painting';
   }
 }
 
