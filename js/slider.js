@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   var carousel = document.querySelector('.carousel');
   var carouselCounter = document.querySelector('.carousel-counter');
   var flkty = new Flickity(carousel, {
@@ -15,18 +15,18 @@ document.addEventListener('DOMContentLoaded', function() {
       y1: 50,
       x2: 65,
       y2: 45,
-      x3: 20
-    }
+      x3: 20,
+    },
   });
 
   var previousSlide = document.querySelector('.previous-big-button');
   var nextSlide = document.querySelector('.next-big-button');
 
   if (matchMedia('screen and (min-width: 769px)').matches) {
-    previousSlide.addEventListener('click', function() {
+    previousSlide.addEventListener('click', function () {
       flkty.previous();
     });
-    nextSlide.addEventListener('click', function() {
+    nextSlide.addEventListener('click', function () {
       flkty.next();
     });
 
