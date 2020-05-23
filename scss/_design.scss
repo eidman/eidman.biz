@@ -15,7 +15,7 @@ div#preload {
   grid-template-areas:
     'nav nav nav nav'
     'shortstop siff verde tsa'
-    'nb sloth motif island';
+    'nb island motif sloth';
   justify-content: center;
   @media only screen and (max-width: 1068px) {
     grid-template-columns: 50vw 50vw;
@@ -48,7 +48,6 @@ div#preload {
 
 .island {
   grid-area: island;
-  border-right: none !important;
   @media only screen and (min-width: 768px) {
     &:hover {
       background-image: url('/assets/design/island/island-hover.jpg');
@@ -96,6 +95,7 @@ div#preload {
 
 .sloth {
   grid-area: sloth;
+  border-right: none !important;
   @media only screen and (min-width: 768px) {
     &:hover {
       background-image: url('/assets/design/sloth/sloth-hover.svg');

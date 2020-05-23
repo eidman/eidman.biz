@@ -28,6 +28,16 @@ img {
   src: url(/fonts/Favorit_Regular.otf);
 }
 
+@font-face {
+  font-family: 'font-light';
+  src: url(/fonts/Favorit_Light.otf);
+}
+
+@font-face {
+  font-family: 'font-mono';
+  src: url(/fonts/Favorit_Regular_Mono.otf);
+}
+
 html {
   min-height: 100vh;
 }

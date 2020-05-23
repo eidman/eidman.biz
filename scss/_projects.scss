@@ -19,8 +19,13 @@
   right: 20px;
   cursor: pointer;
   &:hover {
+    .a {
+      // @include opacity();
+      fill: #fff;
+      border: $grey-border;
+    }
     .b {
-      @include opacity();
+      fill: $grey;
     }
   }
   @media screen and (max-width: 768px) {
@@ -38,18 +43,31 @@
   }
 }
 
-.green-button > .a {
-  fill: $grey;
-}
-
-.green-button > .b {
-  stroke: $grey;
+.white-button {
+  .a {
+    fill: #fff;
+  }
+  .b {
+    fill: $grey;
+  }
+  &:hover {
+    .a {
+      fill: $grey;
+    }
+    .b {
+      fill: #fff;
+    }
+    svg {
+      outline: 1px solid #fff !important;
+    }
+  }
 }
 
 // !!!!!!!!! slide counter !!!!!!!!!! //
 
 .counter-container {
-  font-size: 1.2rem;
+  font-family: 'font-light';
+  font-size: 1.8rem;
   display: flex;
   margin: 10px 0 0em 10px;
   @media screen and (max-width: 768px) {
@@ -105,7 +123,10 @@
 }
 
 .project-title {
-  font-size: 0.8rem;
+  font-family: 'font-mono';
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.02em;
   line-height: 1.4em;
   width: 55%;
   margin-right: 4em;
@@ -120,7 +141,10 @@
   }
 }
 
-.project-description {
+.project-description,
+.project-description > a {
+  font-size: 16.5px;
+  // font-family: 'font-light';
   margin-bottom: 1em;
 }
 
@@ -131,4 +155,8 @@
     font-size: 1.4rem;
     line-height: 1.3em;
   }
+}
+
+.image-border {
+  border: 1px solid $grey;
 }
