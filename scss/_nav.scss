@@ -5,7 +5,7 @@
 .nav-container {
   @include flexCenter();
   justify-content: space-between;
-  margin: 0px 20px;
+  margin: 0px 2vh;
 
   @media only screen and (max-width: 868px) {
     margin: 0px 10%;
@@ -35,21 +35,18 @@
 
 .bonsai {
   position: absolute;
-  height: 6vh;
+  right: 1.5vh;
+  height: 4.5vh;
   width: auto;
-  right: 10px;
-  // z-index: 5000;
-  // position: fixed;
   margin-top: 0.25vh;
   &:hover {
     -moz-animation: spinoffPulse 1s infinite linear;
     -webkit-animation: spinoffPulse 1s infinite linear;
   }
-  // @media only screen and (max-width: 1068px) {
-  //   width: 4.4%;
-  //   margin-top: 0.5vh;
-  //   margin-left: -5vw;
-  // }
+  @media only screen and (max-width: 1068px) {
+    height: 3%;
+    // margin-top: 0.5vh;
+  }
   @media only screen and (max-width: 1023px) {
     display: none;
   }
