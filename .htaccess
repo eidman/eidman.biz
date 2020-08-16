@@ -1,4 +1,4 @@
 AuthType Basic
 AuthName "Password Please"
-AuthUserFile /Users/Aaron/Desktop/projects/eidman.biz/updated/eidman.biz-design/.htpass
+AuthUserFile /Users/Aaron/Desktop/projects/eidman.biz/updated/eidman.biz-simple/.htpass
 Require valid-user
