@@ -1,0 +1,280 @@
+@import 'variables', 'mixins';
+
+// !!!!!!!!! project page !!!!!!!!!! //
+
+.project-page-container {
+  margin: 40px;
+  overflow: hidden;
+  @media screen and (max-width: 768px) {
+    margin: 40px 15px 0 15px;
+  }
+}
+
+// !!!!!!!!! buttons !!!!!!!!!! //
+
+.project-button {
+  display: flex;
+  position: absolute;
+  // width: 40px;
+  top: 16px;
+  left: 20px;
+  cursor: pointer;
+  &:hover {
+    color: #fff;
+  }
+
+  @media screen and (max-width: 768px) {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+  }
+}
+
+.info-button {
+  left: 145px;
+  cursor: help;
+  @media screen and (max-width: 768px) {
+    right: 60px;
+  }
+}
+
+.white-button {
+  color: #fff;
+  &:hover {
+    color: $grey;
+  }
+}
+
+// !!!!!!!!! slide counter !!!!!!!!!! //
+
+.counter-container {
+  // font-family: 'font';
+  // font-size: 1.6rem;
+  display: flex;
+  position: absolute;
+  right: 20px;
+  top: 18px;
+  // margin: 10px 0 0em 10px;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+// !!!!!!!!! project info modal !!!!!!!!!! //
+
+.text-page-container {
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+  opacity: 0;
+}
+
+.text-page-container.show {
+  height: 100%;
+  width: 100vw;
+  background-color: $grey;
+  opacity: 1;
+  z-index: 1000;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.project-info {
+  height: 100vh;
+  display: flex;
+}
+
+.project-info {
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: auto;
+  padding: 20px 70% 20px 20px;
+
+  color: #fff;
+  a {
+    color: #fff;
+    &:hover {
+      background-color: white;
+      color: $grey;
+    }
+  }
+  @media screen and (max-width: 1068px) {
+    padding: 20px 50% 20px 20px;
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    padding: 15px 30% 20px 15px;
+    a {
+      border-bottom: 1px solid #fff;
+    }
+  }
+}
+
+.project-title {
+  font-family: 'font-bold';
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  margin-bottom: 1rem;
+  width: 55%;
+  margin-right: 4em;
+  @media screen and (max-width: 1069px) {
+    font-size: 0.9rem;
+  }
+  @media screen and (max-width: 768px) {
+    width: 70%;
+    font-size: 0.8rem;
+  }
+}
+
+.project-description,
+.project-description > a {
+  line-height: 1.5em;
+}
+
+.project-description,
+.project-description a,
+.project-cred,
+.project-cred a {
+  @media screen and (max-width: 1069px) {
+    font-size: 1.1rem;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 1rem;
+  }
+}
+.project-cred {
+  margin-top: 0.5em;
+}
+
+.image-border {
+  border: 1px solid $grey;
+}
+
+@import 'variables', 'mixins';
+// !!!!!!!!! hover image preload !!!!!!!!!! //
+
+div#preload {
+  display: none;
+}
+
+// !!!!!!!!! design project grid !!!!!!!!!! //
+
+.design-container {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(4, calc(100vw / 4));
+  grid-template-rows: 8.5vh 45.75vh 45.75vh;
+  grid-template-areas:
+    'nav nav nav nav'
+    'academy shortstop siff verde'
+    'nb motif island tsa';
+  justify-content: center;
+  @media only screen and (max-width: 1068px) {
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: 8.5vh repeat(4, 30vh);
+    grid-template-areas:
+      'nav nav'
+      'academy shortstop'
+      'siff verde'
+      'nb tsa'
+      'motif island';
+  }
+
+  @media only screen and (max-width: 768px) {
+    grid-template-columns: 100vw;
+    grid-template-rows: 8.5vh repeat(8, 30vh);
+    grid-template-areas:
+      'nav'
+      'academy'
+      'shortstop'
+      'siff'
+      'verde'
+      'tsa'
+      'nb'
+      'motif'
+      'island';
+  }
+}
+
+// !!!!!!!!! design projects !!!!!!!!!! //
+
+.island {
+  grid-area: island;
+  @media only screen and (min-width: 768px) {
+    &:hover {
+      background-image: url('/assets/design/island/island-hover.jpg');
+    }
+  }
+}
+
+.motif {
+  grid-area: motif;
+  border-right: none;
+  @media only screen and (min-width: 768px) {
+    &:hover {
+      background-image: url('/assets/design/motif/motif-hover.jpg');
+    }
+  }
+}
+
+.nb {
+  grid-area: nb;
+  @media only screen and (min-width: 768px) {
+    &:hover {
+      background-image: url('/assets/design/nb/nb-1.jpg');
+    }
+  }
+}
+
+.siff {
+  grid-area: siff;
+  border-right: none;
+  @media only screen and (min-width: 768px) {
+    &:hover {
+      background-image: url('/assets/design/siff/siff-hover.jpg');
+    }
+  }
+}
+
+.shortstop {
+  grid-area: shortstop;
+  @media only screen and (min-width: 768px) {
+    &:hover {
+      background-image: url('/assets/design/shortstop/shortstop-hover.gif');
+    }
+  }
+}
+
+.academy {
+  grid-area: academy;
+  @media only screen and (min-width: 768px) {
+    &:hover {
+      background-image: url('/assets/design/academy/academy-hover.jpg');
+    }
+  }
+}
+
+.tsa {
+  grid-area: tsa;
+  border-right: none !important;
+  @media only screen and (min-width: 768px) {
+    &:hover {
+      background-image: url('/assets/design/tsa/tsa-hover.jpg');
+    }
+  }
+}
+
+.verde {
+  grid-area: verde;
+  border-right: none !important;
+  @media only screen and (min-width: 768px) {
+    &:hover {
+      background-image: url('/assets/design/verde/verde-hover.jpg');
+    }
+  }
+}

@@ -1,7 +1,7 @@
 .about-container {
   display: grid;
   grid-template-columns: repeat(2, 50vw);
-  grid-template-rows: 6vh 47vh 47vh;
+  grid-template-rows: 8.5vh 45.75vh 45.75vh;
   grid-template-areas:
     'nav nav'
     'who what'
@@ -34,7 +34,7 @@
   flex-direction: column;
 
   border-top: $grey-border;
-  padding: 11% 20% 11% 11%;
+  padding: 11%;
   p {
     line-height: 1.4em;
     margin-bottom: 2em;
@@ -43,7 +43,7 @@
     p {
       margin-bottom: 1.75em;
     }
-    padding: 10% 20% 0px 10%;
+    padding: 10% 25% 0px 10%;
   }
 }
 
@@ -55,12 +55,5 @@
       'nav'
       'who'
       'what';
-  }
-}
-
-.clock-container {
-  grid-area: clock;
-  @media only screen and (max-width: 768px) {
-    display: none;
   }
 }
