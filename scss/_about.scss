@@ -34,7 +34,7 @@
   flex-direction: column;
 
   border-top: $grey-border;
-  padding: 7% 20% 8% 8.25%;
+  padding: 7% 3% 8% 8.25%;
   p {
     line-height: 1.4em;
     margin-bottom: 2em;
@@ -43,16 +43,15 @@
     p {
       margin-bottom: 1.75em;
     }
-    padding: 10% 20% 0px 10%;
+    padding: 6% 6% 0 6%;
   }
 }
 
 @media only screen and (max-width: 768px) {
   .about-container {
     grid-template-columns: 100vw;
-    grid-template-rows: 10vh 50vh 40vh;
+    grid-template-rows: 65vh 35vh;
     grid-template-areas:
-      'nav'
       'who'
       'what';
   }

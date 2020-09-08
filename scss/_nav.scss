@@ -5,10 +5,10 @@
 .nav-container {
   @include flexCenter();
   justify-content: space-between;
-  margin: 0px 2vh;
+  margin: 0px 1vw;
 
-  @media only screen and (max-width: 868px) {
-    margin: 0px 10%;
+  @media only screen and (max-width: 768px) {
+    display: none;
   }
 }
 
