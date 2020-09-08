@@ -1,5 +1,4 @@
-@import 'variables', 'mixins', 'nav', 'hamburgers', 'clock', 'about', 'projects',
-  'flickity-docs';
+@import 'variables', 'mixins', 'nav', 'clock', 'about';
 
 // !!!!!!!!! Responsivity for Smaller Devices !!!!!!!!!! //
 @-ms-viewport {
@@ -25,13 +24,12 @@ img {
 
 @font-face {
   font-family: 'font';
-  // src: url(/fonts/Favorit_Regular.otf);
-  src: url(/fonts/SctoGroteskARegular.otf);
+  src: url(/fonts/Favorit_Regular.otf);
 }
 
 @font-face {
-  font-family: 'font-bold';
-  src: url(/fonts/SctoGroteskABold.otf);
+  font-family: 'font-mono';
+  src: url(/fonts/Favorit-LightMono.otf);
 }
 
 html {
@@ -43,7 +41,6 @@ a {
   font-family: $font-stack;
   font-size: $font-size;
   line-height: 1.4em;
-  letter-spacing: 0.008em;
   color: $grey;
   text-rendering: optimizeLegibility;
 }
@@ -51,8 +48,6 @@ a {
 a {
   text-decoration: none;
 }
-
-// !!!!!!!!! Index Grid !!!!!!!!!! //
 
 .box-title {
   text-align: center;
@@ -78,16 +73,5 @@ a {
   @media only screen and (max-width: 768px) {
     border-top: $grey-border;
     border-right: none;
-  }
-}
-
-.design {
-  grid-area: design;
-}
-
-.clock-container {
-  grid-area: clock;
-  @media only screen and (max-width: 768px) {
-    display: none;
   }
 }
